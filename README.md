@@ -97,15 +97,17 @@ Yes, as long as the points from the above section [Coding guidelines] are not vi
 
 5. App's dynamic behavior - please add the required Javascript / Typescript and styles so that:
    - No required for Junior Developer
-6. Deploy to vercel and share the link
+6. Pull Request to the main repository, deploy to vercel and share the link
 
 ### BONUS (Optional for Frontend Heroes)
 
-6.  Leave an empty file named "I AM A FRONTEND HERO" in the root folder.
-7.  App's dynamic behavior
+7.  Leave an empty file named "I AM A FRONTEND HERO" in the root folder.
+8.  App's dynamic behavior
 
 - Create a API call inside of the folder pages/api to get all products
-- Consume and handle data from the API
+- Consume and handle data from the API using SSE
+
+9. Pull Request to the main repository, deploy to vercel and share the link
 
 ## What are you expected to hand in?
 
