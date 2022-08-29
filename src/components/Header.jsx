@@ -3,7 +3,7 @@ import logo from '../assets/images/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import {BiUserCircle} from 'react-icons/bi'
-import {BsFillBasket3Fill} from 'react-icons/bs'
+import {BiBasket} from 'react-icons/bi'
 
 
 function Header() {
@@ -30,13 +30,13 @@ function Header() {
             </Link>
           </li>
           <li className='ml-6 flex text-sm'>
-            <BiUserCircle size={18} className='mr-2' />
+            <BiUserCircle size={21} className='mr-2' />
             <Link href="/">
               Hello, Leonardo
             </Link>
           </li>
           <li className='ml-6 flex text-sm'>
-            <BsFillBasket3Fill size={18} className='mr-2' />
+            <BiBasket size={20} className='mr-2' />
             <Link href="/">
               Cart
             </Link>

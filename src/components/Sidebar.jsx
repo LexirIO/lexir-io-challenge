@@ -18,7 +18,7 @@ function Sidebar() {
           </h4>
         </div>
         <div className="mt-2 flex justify-center">
-          <p className="text-left w-72">
+          <p className="text-left text-[16px] w-72">
             Badoria rosso is a red vermouth that balances fresh, herby bitter
             notes against. Kiss My Rhubarb takes its origins from an old
             handwritten recipe from co-creators Niels’ and Wouters’ rebellious

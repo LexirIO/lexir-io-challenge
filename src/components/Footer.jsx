@@ -119,16 +119,16 @@ function Footer() {
         </div>
       </div>
       <div className='flex justify-between mt-3'>
-        <div className='text-white text-sm'>
+        <p className='text-white text-[16px] font-thin'>
         © 2022 Lexir Inc.
-        </div>
+        </p>
         <div className='justify-between mt-2 flex'>
-          <div className="text-white relative right-6 text-sm">
+          <p className="text-white relative right-6 text-[16px] font-medium">
               Privacy
-          </div>
-          <div className="text-white mr-3 text-sm">
+          </p>
+          <p className="text-white mr-3 text-[16px] font-medium">
             Terms of service
-          </div>
+          </p>
         </div>
       </div>
     </footer>
