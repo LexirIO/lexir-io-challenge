@@ -86,22 +86,18 @@ Yes, as long as the points from the above section [Coding guidelines] are not vi
 
 ### Junior Developers _and_ Frontend Heroes
 
-1.  Design to be developed: https://www.figma.com/file/G1uRC23QIVkKzLOif8MqHf/Tech-Assessment
+1. Fork this repo
+2. Design to be developed: https://www.figma.com/file/G1uRC23QIVkKzLOif8MqHf/Tech-Assessment
+3. Tailwind Implementation
+   - Please add to the existing project the Tailwind CSS framework to achieve the required design and planned behavior.
+4. HTML markup
 
-2.  Tailwind Implementation
+   - Please add to the existing src/index.tsx file the semantic markup needed to achieve the required design and planned behavior.
+   - Depending on your implementation (regarding modularization/componentization) you may chose to have some components. If that's case (which is fine) we would still like you to add at least the base structural elements (eg: header, footer, etc) in the base index.tsx file and respective calls
 
-    - Please add to the existing project the Tailwind CSS framework to achieve the required design and planned behavior.
-
-3.  HTML markup
-
-    - Please add to the existing src/index.tsx file the semantic markup needed to achieve the required design and planned behavior.
-    - Depending on your implementation (regarding modularization/componentization) you may chose to have some components. If that's case (which is fine) we would still like you to add at least the base structural elements (eg: header, footer, etc) in the base index.tsx file and respective calls
-
-4.  App's dynamic behavior - please add the required Javascript / Typescript and styles so that:
-
-    - No required for Junior Developer
-
-5.  Deploy to vercel and share the link
+5. App's dynamic behavior - please add the required Javascript / Typescript and styles so that:
+   - No required for Junior Developer
+6. Deploy to vercel and share the link
 
 ### BONUS (Optional for Frontend Heroes)
 
