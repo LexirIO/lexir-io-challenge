@@ -26,6 +26,6 @@
     },
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Sidebar.jsx", "src/components/Card.jsx", "src/components/Footer.jsx", "src/components/Header.jsx"],
   "exclude": ["node_modules"]
 }
