@@ -10,12 +10,12 @@ function Header() {
   return (
      <header className='flex justify-between shadow-md p-9'>
       <div>
-        <a href="/">
+        <Link href="/">
         <Image
         src={logo}
         alt="logo"
       />
-        </a>
+        </Link>
       </div>
       <div className='flex'>
         <ul className='flex justify-around ml-2'>
