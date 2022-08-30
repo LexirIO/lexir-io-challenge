@@ -5,7 +5,7 @@ import { Product } from "src/types";
 
 const ProductCard = ({ alt, name, price, brand, image }: Product) => {
   return (
-    <article className="h-75 w-43.5  flex flex-col items-center shadow-product-card">
+    <article className="h-75 w-43.5 flex flex-col items-center shadow-product-card">
       <div className="w-full h-58  flex bg-gray-110 justify-center items-center relative">
         <Image
           src={`/images/${image}.png`}
