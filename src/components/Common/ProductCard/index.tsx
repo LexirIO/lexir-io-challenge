@@ -12,6 +12,7 @@ const ProductCard = ({ alt, name, price, brand, image }: Product) => {
           alt={alt}
           objectFit="contain"
           layout="fill"
+          priority
         />
       </div>
       <div className="flex flex-col justify-center px-2.5 mt-2.5 w-full">

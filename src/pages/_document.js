@@ -5,6 +5,11 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta
+            name="description"
+            content="Web page designed for LExir as an assignment"
+          />
+
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"

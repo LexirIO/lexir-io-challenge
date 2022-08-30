@@ -10,10 +10,15 @@ interface Props {
 
 const Home = ({ data }: Props) => {
   return (
-    <div className="mt-10 mb-20 mx-8.5 flex flex-col items-center lg:items-start lg:flex-row lg:justify-between gap-2 ">
-      <Aside />
-      <Shop data={data} />
-    </div>
+    <>
+      <Head>
+        <title>Lexir - Farhad Faraji</title>
+      </Head>
+      <div className="mt-10 mb-20 mx-8.5 flex flex-col items-center lg:items-start lg:flex-row lg:justify-between gap-2 ">
+        <Aside />
+        <Shop data={data} />
+      </div>
+    </>
   );
 };
 
