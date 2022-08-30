@@ -1,0 +1,42 @@
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+
+.brandName{
+    font-family: source-serif-pro, serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 35px;
+}
+.brandDescription{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2D2D2D;
+}
+
+.btnReadMore{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1C8C64
+}
+
+.location{
+    font-size: 16px;
+    line-height: 25px;
+    color: black;
+}
+.locationInfo{
+    font-size: 22px;
+    line-height: 35px;
+    color: #595959;
+}
+.categories{
+    font-size: 16px;
+    line-height: 25px;
+    color: black;
+}
+.category{
+    background-color: #F9F9F9;
+}

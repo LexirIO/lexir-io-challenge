@@ -1,0 +1,15 @@
+
+
+.navList{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D2D2D;
+}
+
+.navList li{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

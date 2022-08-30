@@ -1,0 +1,17 @@
+.footer{
+    color: #fff;
+    background-color: #2D2D2D;
+}
+
+.sectionName{
+    text-transform: uppercase;
+    color: #8F8F8F
+}   
+.hr{
+    border: none;
+    height: 1px;
+    background-color: #8F8F8F; /* Modern Browsers */
+}
+.copyRight{
+    color: #8F8F8F;
+}
