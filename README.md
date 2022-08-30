@@ -1,120 +1,70 @@
-# Lexir | Frontend Developer Challenge
+# Getting Started with Create React App
 
-THIS IS A SIMPLE EXERCISE, WHICH IS PART OF A RECRUITING PROCESS OF LEXIR AND AS SUCH, IT SHOULD NOT BE SHARED, DISTRIBUTED OR EXPOSED ANYWHERE WITHOUT CONSENT OF LEXIR. DOING SO, WILL AUTOMATICALLY DISQUALIFY YOU FROM THE PROCESS.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-All the provided data (namely: product names, images and prices) is not to be taken as real and is only relevant as example / "dummy" data for use in this exercise.
+## Available Scripts
 
-This is an important document for your future career. Please read carefully through all of the following instructions before you begin with the implementation.
+In the project directory, you can run:
 
-This test is targeted at two different levels: Junior Frontend Developers and Frontend Heroes. Reading through this document + setup should take ~10min. Please choose your own level.
+### `npm start`
 
-Also, please keep in mind that your handed in code will form the basis of the next steps in the formal recruiting process. It is therefore only in your own best interest to be able to explain every code decision you took, while of course trying to show your best.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Table of Contents
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Whom we're looking for
+### `npm test`
 
-At Lexir we develop and maintain high quality web applications that cover a broad range of necessities. Which is why we expect our developers to feel at home in all areas of modern Frontend development.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Expressive markup, crossbrowser / crossdevice working CSS styles and lean JavaScript / Typescript code should therefore be on your high priority list.
+### `npm run build`
 
-## Setup your system
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### node.js v12.22.0 or later
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-You will need [node.js](https://nodejs.org/) v12.22.0 (or later). In case you want to manage several node versions on your machine, we recommend [nvm](https://github.com/creationix/nvm) for Mac/\*nix and [nodist](https://github.com/marcelklehr/nodist) for Windows.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Install NPM packages and start
+### `npm run eject`
 
-Once you have node.js installed, open up your OS's Terminal/Bash application, change into the root folder of the test (where the file `package.json` is located) and run `yarn install` (please note that you will need a _working Internet connection_).
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-After all NPM packages installed successfully, the css pre-compile and serve processes will automatically be triggered (you can do that manually by running `yarn run dev`).
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- Whenever a change is detected in files inside the `/src` folder it will re-run the above related scripts and reload the page in the browser.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-At this point you should be able to see a blank page in your browser.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### IDE configuration
+## Learn More
 
-Please configure your IDE to use the [`.editorconfig`](http://editorconfig.org/#download) as it will help you deliver consistent coding styles as defined by us.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Troubleshooting
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-If you experience problems during the setup please _STOP_ and send a message to the human resource employee you are in contact with, describing your steps and pasting the error log of your Terminal / Bash application.
+### Code Splitting
 
-## What we expect from your code
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Browsers it should work in and display correctly
+### Analyzing the Bundle Size
 
-- Latest Chrome
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Where should I place my files?
+### Making a Progressive Web App
 
-We've got an initial folder and file structure in `src` prepared for you:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-- `pages/index.tsx` - File with prepared markup (needs your improvements)
-- `styles/` - inside this folder you can add styles, classes, mixins, variables, etc that will help you to implement the required design as fast as possible.
-- `components/` - inside this folder you should add all the JavaScript components needed to make your solution work as it should.
-- `assets/` - images and other assets to be used by this solution.
+### Advanced Configuration
 
-Please keep and use this structure.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Coding guidelines
+### Deployment
 
-1.  HTML
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-    - Make sure to add all needed HTML so that it fits the exercise requirements.
-    - Please use semantically correct HTML5 markup
+### `npm run build` fails to minify
 
-2.  JavaScript
-
-    - Please use Typescript, ReactJS is allowed
-    - We would like to see YOUR clean and modular JavaScript / Typescript code (while commented when needed).
-    - Use of recent JavaScript / Typescript features (eg: ES6, ES2016, ES2017) is highly encouraged as long as supported by latest chrome (so you shouldn't have to transpile / compile your JavaScript).
-
-3.  CSS
-
-    - We kindly ask you to use TAILWIND CSS
-    - Another frameworks are not allowed
-    - Only Pure CSS are not allowed
-
-### Can I use additional NPM packages?
-
-Yes, as long as the points from the above section [Coding guidelines] are not violated.
-
-## Requirements
-
-### Junior Developers _and_ Frontend Heroes
-
-1. Fork this repo
-2. Design to be developed: https://www.figma.com/file/G1uRC23QIVkKzLOif8MqHf/Tech-Assessment
-3. Tailwind Implementation
-   - Please add to the existing project the Tailwind CSS framework to achieve the required design and planned behavior.
-4. HTML markup
-
-   - Please add to the existing src/index.tsx file the semantic markup needed to achieve the required design and planned behavior.
-   - Depending on your implementation (regarding modularization/componentization) you may chose to have some components. If that's case (which is fine) we would still like you to add at least the base structural elements (eg: header, footer, etc) in the base index.tsx file and respective calls
-
-5. App's dynamic behavior - please add the required Javascript / Typescript and styles so that:
-   - No required for Junior Developer
-6. Pull Request to the main repository, deploy to vercel and share the link
-
-### BONUS (Optional for Frontend Heroes)
-
-7.  Leave an empty file named "I AM A FRONTEND HERO" in the root folder.
-8.  App's dynamic behavior
-
-- Create a API call inside of the folder pages/api to get all products
-- Consume and handle data from the API using SSE
-
-9. Pull Request to the main repository, deploy to vercel and share the link
-
-## What are you expected to hand in?
-
-Please remember, when running all tasks in the package.json scripts there should be _no errors_. Take your time to make it work.
-
-Optionally: you can add a `SOLUTION.md` file with any additional needed instructions to run code and any comments (explaining your decisions, making suggestions, etc) about this challenge and your solution.
-
-Finally, commit (and share the link) and zip archive with your solution which you send back as an email to the human resource employee you are in contact with and tell her/him if you ultimately applied as a Junior Frontend Developer or as a Frontend Hero. _PLEASE DO NOT INCLUDE THE `node_modules` folder_.
-
-Good luck :-)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
