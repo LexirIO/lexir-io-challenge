@@ -5,7 +5,7 @@ export const Footer = () => {
     return new Date().getFullYear();
   };
   return (
-    <div className="bg-zinc-800	 absolute bottom-0 w-full">
+    <div className="bg-zinc-800 w-full">
       <div className="p-10">
         <div className="flex justify-between items-baseline">
           <img src="/assets/img/lexir-logo-white.svg" className="h-8"/>
