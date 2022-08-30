@@ -3,9 +3,8 @@ import React from "react";
 export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg shadow-md py-5 bg-white relative flex items-center w-full justify-between">
-      <div className="px-6 w-full flex flex-wrap items-end justify-between">
-        <img src="/assets/img/lexir-logo-black.svg" className="m-2" />
-
+      <div className="flex justify-between items-center w-full px-10 py-2">
+        <img src="/assets/img/lexir-logo-black.svg" className="h-8"/>
         <div className="navbar-collapse collapse grow items-center" id="navbarSupportedContentY">
           <ul className="navbar-nav flex justify-end">
             <li className="nav-item">
