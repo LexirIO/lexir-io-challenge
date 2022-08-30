@@ -5,7 +5,7 @@ const nextConfig = {
   headers: async function () {
     return [
       {
-        source: "/src/api/(.*)",
+        source: "/src/pages/api/(.*)",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
