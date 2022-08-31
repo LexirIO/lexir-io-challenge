@@ -7,11 +7,11 @@ export default function Header() {
 
   return (
     <nav className="w-full bg-white shadow-lg ">
-      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+      <div className="justify-between  px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="#">
-              <h2 className="text-2xl font-bold text-black">Lexir</h2>
+              <h2 className="text-2xl font-bold text-black uppercase">Lexir</h2>
             </a>
             <div className="md:hidden">
               <button
@@ -58,17 +58,17 @@ export default function Header() {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-black hover:text-indigo-200">
+              <li className="text-black hover:text-indigo-200 uppercase">
                 <a href="#">Products</a>
               </li>
-              <li className="text-black hover:text-indigo-200">
+              <li className="text-black hover:text-indigo-200 uppercase">
                 <a href="#">Brand</a>
               </li>
-              <li className="text-black hover:text-indigo-200 flex flex-row items-center relative">
+              <li className="text-black hover:text-indigo-200 flex flex-row items-center relative uppercase">
                 <FaUserCircle className="mr-2" />
-                <a href="#">Hello, Leandro US</a>
+                <a href="#">Hello, Leandro</a>
               </li>
-              <li className="text-black hover:text-indigo-200 flex flex-row items-center relative">
+              <li className="text-black hover:text-indigo-200 flex flex-row items-center relative uppercase">
                 <FaShoppingCart className="mr-2" />{" "}
                 <span className="absolute bottom-[15px] left-[9px] bg-[green] text-white border-[2px] border-white flex items-center justify-center rounded-full h-4 w-4 text-[6px] ">
                   3
