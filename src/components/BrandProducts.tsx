@@ -1,13 +1,11 @@
 import Image from "next/image";
 import { Product } from "src/Models";
-import styles from "../styles/Product.module.css";
-import products from "../api/products";
+import styles from "../styles/BrandProducts.module.css";
+import productsApi from "../api/products";
 import AddIcon from "../assets/icons/addIcon";
 
-let productsList: Product[] = products;
-
 interface ProductsProps {
-    search: string;
+    brandName: string;
 }
 
 function ProductCard(product: Product) {
@@ -21,14 +19,7 @@ function ProductCard(product: Product) {
 export default function Products(props: ProductsProps) {
 
     //Simulation of a call to the fake api
-    function getApiData(name: string): Product[] | null {
-        if (name == "baldoria") {
-            return productsList;
-        } else
-            return null;
-    }
-
-    let products: Product[] | null = getApiData(props.search);
+    let products = productsApi.getProductsByBrand(props.brandName);
 
     return <div className={"flex gap-8 flex-wrap justify-center lg:justify-evenly " + styles.lato}>
         {products?.map((product: Product) => {

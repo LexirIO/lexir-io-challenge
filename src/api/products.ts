@@ -1,13 +1,20 @@
 // This is a fake api for testing purposes
 
-import branneri from "../assets/Products/branneri.jpg";
-import gaston from "../assets/Products/gaston.jpg";
-import silentPool from "../assets/Products/silentPool.jpg";
-import umami from "../assets/Products/umami.jpg";
-import { Category } from "src/Models";
+//Import Baldoria images
+import branneri from "../assets/images/Products/branneri.jpg";
+import gaston from "../assets/images/Products/gaston.jpg";
+import silentPool from "../assets/images/Products/silentPool.jpg";
+import umami from "../assets/images/Products/umami.jpg";
+import { Category, Product } from "src/Models";
+
+// Import novoFogo images
+import chameleon from "../assets/images/Products/chameleon.jpg";
+import tanager from "../assets/images/Products/tanager.jpg";
+import barrelAged from "../assets/images/Products/barrelAged.jpg";
+import silver from "../assets/images/Products/silver.jpg";
 
 
-export default
+const baldoriaProducts =
     [
         {
             id: 1,
@@ -129,3 +136,47 @@ export default
             image: gaston,
         }
     ]
+const novoFogoProducts =[
+    {
+        id: 1,
+        name: "chameleon",
+        fullName: "Chameleon",
+        price: 41,
+        category: Category.Cachaca,
+        image: chameleon,
+    },
+    {
+        id: 2,
+        name: "tanager",
+        fullName: "Tanager",
+        price: 49,
+        category: Category.Cachaca,
+        image: tanager,
+    },
+    {
+        id: 3,
+        name: "barrelAged",
+        fullName: "Barrel-Aged",
+        price: 48,
+        category: Category.Cachaca,
+        image: barrelAged,
+    },
+    {
+        id: 4,
+        name: "silver",
+        fullName: "Silver",
+        price: 36,
+        category: Category.Cachaca,
+        image: silver,
+    },
+]
+
+function getProductsByBrand(name: string): Product[] {
+    if(name == "novoFogo"){
+        return novoFogoProducts
+    }else{
+        return baldoriaProducts
+    }
+}
+
+export default { getProductsByBrand }

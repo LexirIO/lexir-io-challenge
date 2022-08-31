@@ -1,9 +1,9 @@
 import Logo from "../assets/logoAlt";
 import styles from "../styles/Footer.module.css";
-import MediumIcon from "../assets/contacts/medium";
-import FacebookIcon from "../assets/contacts/facebook";
-import InstagramIcon from "../assets/contacts/instagram";
-import Linkedin from "../assets/contacts/linkedin";
+import MediumIcon from "../assets/icons/contacts/medium";
+import FacebookIcon from "../assets/icons/contacts/facebook";
+import InstagramIcon from "../assets/icons/contacts/instagram";
+import Linkedin from "../assets/icons/contacts/linkedin";
 
 export default function Footer() {
     return( 

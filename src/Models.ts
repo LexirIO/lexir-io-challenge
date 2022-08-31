@@ -1,8 +1,9 @@
 export const enum Category {
-    Gin = "Gin", Vodka = "Vodka", Brandy = "Brandy"
+    Gin = "Gin", Vodka = "Vodka", Brandy = "Brandy", Cachaca ="Cachaça"
 }
 
 export interface Brand{
+    id: number;
     name: string;
     fullName: string;
     logo: any;

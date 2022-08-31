@@ -1,12 +1,11 @@
 import { Brand, Category } from "src/Models";
 import Image from 'next/image';
 import brandApi from '../api/brands';
-import baldorianLogo from "../assets/Brands/baldoriaLogo.png";
 
 import LocationIcon from "../assets/icons/locationIcon";
 import CategoriesIcon from "../assets/icons/categoriesIcon";
 
-import styles from "../styles/Brand.module.css";
+import styles from "../styles/BrandInfo.module.css";
 
 interface BrandProps {
     name: string;
@@ -14,17 +13,10 @@ interface BrandProps {
 
 export default function BrandComponent(props: BrandProps) {
 
-    //simulatio of api call
-    function getApiData(name: string): Brand | null {
-        if (name == "baldoria") {
-            return brandApi;
-        } else
-            return null;
-    }
+    //simulation of api call
+    let brandData: Brand | null = brandApi.getBrandByName(props.name);
 
-    
-    let brandData: Brand | null = getApiData(props.name);
-
+    if(brandData != null) {
     return (
         <div className={"flex flex-col justify-center px-8 border " + styles.lato}>
 
@@ -56,5 +48,7 @@ export default function BrandComponent(props: BrandProps) {
                 </div>
             </div>
         </div>
-    )
+    )}else {
+        return <div></div>
+    }
 }

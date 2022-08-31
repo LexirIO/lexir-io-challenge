@@ -26,6 +26,7 @@
     border-radius: 5px;
 }
 
+
 @media screen and (min-width: 768px){
     .hamburguer{
         display: none;
