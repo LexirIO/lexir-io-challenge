@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-import logoImgUrl from '../assets/images/Logo.svg'
+import logoImgUrl from '../assets/images/logo.svg'
 import profileImgUrl from '../assets/images/profile.png'
 import cardImgUrl from '../assets/images/card.png'
 import styles from '../styles/Navbar.module.css'
