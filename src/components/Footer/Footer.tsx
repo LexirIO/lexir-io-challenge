@@ -123,7 +123,6 @@ function Footer() {
           </ul>
         </div>
       </div>
-      {/* ------------------------------ */}
       <hr className="my-6 border-gray-200"></hr>
       <div className="flex justify-between">
         <span className=" text-gray-500">
