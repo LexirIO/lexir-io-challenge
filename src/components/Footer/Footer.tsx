@@ -1,4 +1,4 @@
-import { BsInstagram, BsLinkedin, BsFacebook, BsSnapchat } from "react-icons/Bs";
+import { BsInstagram, BsLinkedin, BsFacebook, BsSnapchat } from "react-icons/bs";
 
 function Footer() {
   return (

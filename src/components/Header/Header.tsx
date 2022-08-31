@@ -1,5 +1,5 @@
 import { FaUserCircle, FaShoppingCart } from "react-icons/fa";
-import { AiOutlineMenu } from "react-icons/Ai";
+import { AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
 
 function Header() {
