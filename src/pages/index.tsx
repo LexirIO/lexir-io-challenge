@@ -6,16 +6,10 @@ import { SideMenu } from "@components/SideMenu";
 export default function Home() {
   return (
     <>
-      <header>
-        <Navbar />
-      </header>
-      <div className="flex m-10 space-x-6">
-        <div className="w-3/12">
-          <SideMenu />
-        </div>
-        <div className="w-9/12">
-          <DrinkCardContainer />
-        </div>
+      <Navbar />
+      <div className="flex mx-10 mt-36 mb-16 space-x-6">
+        <SideMenu />
+        <DrinkCardContainer />
       </div>
       <Footer />
     </>

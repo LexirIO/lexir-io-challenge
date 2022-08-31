@@ -1,9 +1,8 @@
-import React from "react";
 import { Card } from "./Card";
 
 export const DrinkCardContainer = () => {
   return (
-    <>
+    <div className="w-8/12">
       <div className="flex">
         <Card bottle="umami" />
         <Card bottle="silentpool" />
@@ -34,6 +33,6 @@ export const DrinkCardContainer = () => {
         <Card bottle="stockholms" />
         <Card bottle="gaston" />
       </div>
-    </>
+    </div>
   );
 };
