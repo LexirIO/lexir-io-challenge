@@ -8,11 +8,11 @@ import umami from "../assets/images/Products/umami.jpg";
 import { Category, Product } from "src/Models";
 
 // Import novoFogo images
-import chameleon from "../assets/images/Products/chameleon.jpg";
-import tanager from "../assets/images/Products/tanager.jpg";
-import barrelAged from "../assets/images/Products/barrelAged.jpg";
-import silver from "../assets/images/Products/silver.jpg";
-
+import chameleon from "../assets/images/Products/chameleon1.jpg";
+import tanager from "../assets/images/Products/tanager1.jpg";
+import barrelAged from "../assets/images/Products/barrelAged1.jpg";
+import silver from "../assets/images/Products/silver1.jpg";
+ 
 
 const baldoriaProducts =
     [
