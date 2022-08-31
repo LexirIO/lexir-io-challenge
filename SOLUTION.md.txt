@@ -1,0 +1,88 @@
+I run application by `yarn run dev` and there was no error message, so I can begin to plan.
+My plan -->
+  I Learn enough nextJs, at least to build the page.
+  II Learn tailwind framework.
+  III Plan how to develop the page.
+  IV Develop page using only css.
+  V Test for responsivenes
+  VI Migrate the page styling to tailwind.
+
+I-> I read nextjs documentation, no need to learn advanced nextjs for now, I will develop only one page, so I will use index.tsx like I use in cra apps.
+
+II-> there is online converters (google results for 'from only css to tailwind converter') and I can use it but I will not cheat. 
+
+    <!-- W for Wrapper -->
+III-> Page structure in most general form, folder structure also should be -> 
+  <div className="main-wrapper">
+    <Header />
+    <Main />
+    <Footer />
+  </div>
+
+  Header --> 
+  Cart is one the most important element in page, so it shouldn't be hidden when responsivenes comes in to play. Therefore it is separated from Nav.
+  <Header>
+    <Logo/>
+    <W>
+      <Nav/>
+      <Cart/>
+    </W> 
+  </Header>
+
+  Main --> 
+  <Main>
+    <ProductInfo>
+      <ProductLogo/>
+      <ProductName/>
+      <ProductStory/>
+      <ReadMore/>
+      <ProductLocation/>
+      <ProductCategories>
+        {categories --map--> <CategoryCard ...props>}
+      <ProductCategories/>
+    </ProductInfo>
+    
+		<ProductItems>
+    	{productsData --map--> <ProductItem ...props />}
+    </ProductItems>
+  </Main>
+
+  Footer -->
+  <Footer>
+    <UpperFooter>
+      <Logo/>
+      <Navs>
+        <Community />
+        <Platform />
+        <Company />
+        <LexirShop />
+      </Navs>
+      <Socials/>
+    </UpperFooter>
+
+    <LowerFooter>
+      <CopyRight/>
+      <LowerRightFooter>
+        <Privacy/>
+        <TermsOfService/>
+      </LowerRightFooter>
+    </LowerFooter>
+  </Footer>
+
+Then I grabbed images and icons from figma file. 
+my copy of figma file, if changed recently: https://www.figma.com/file/qVxqi0ydmDIETxloKJjmyq/Tech-Assessment-(Copy)
+
+Some points to reconsider:
+Amount of item added to cart look to small
+Why there is a Read More there is not overflow of introductionary text
+
+I did not implemented hover and active states.
+
+
+
+
+
+
+
+
+
