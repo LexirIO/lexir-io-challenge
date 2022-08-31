@@ -5,7 +5,7 @@ import { CardBoardBox, Location } from "../../constants/icons";
 
 const BrandCard = () => {
   return (
-    <div className='w-[33%] h-1/2 flex flex-col items-center pt-5 pb-10 shadow-lg shadow-[#F2F2F2] ring-1 ring-[#F2F2F2]'>
+    <div className='w-[30%] h-1/2 flex flex-col items-center pt-5 pb-10 shadow-lg shadow-[#F2F2F2] ring-1 ring-[#F2F2F2]'>
       {/* Brand-Logo */}
       <Image src={images.baldoriaLogo} alt='baldoria_logo' />
 

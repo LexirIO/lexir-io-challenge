@@ -7,7 +7,7 @@ import { ShoppingBag, User } from "../../constants/icons";
 const Navbar = () => {
   return (
     <nav className='shadow-md shadow-[#F2F2F2]'>
-      <div className='w-[95%] mx-auto flex justify-between items-center h-[70px] font-lato font-semibold text-primary'>
+      <div className='w-[85%] mx-auto flex justify-between items-center h-[70px] font-lato font-semibold text-primary'>
         {/* Navbar Logo */}
 
         <Link href='/'>

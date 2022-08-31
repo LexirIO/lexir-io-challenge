@@ -4,7 +4,7 @@ import ProductCard from "../ProductCard/ProductCard";
 
 const ProductsSection = () => {
   return (
-    <div className='flex-1 flex justify-center items-center gap-8 flex-wrap'>
+    <div className='flex-1 flex justify-center items-center gap-5 flex-wrap'>
       {dummyData.map((item, i) => (
         <ProductCard productData={item} key={i} />
       ))}
