@@ -2,12 +2,14 @@ import Image from 'next/image'
 import logo from '../public/logow.png'
 import fb from '../public/fb.png'
 import insta from '../public/insta.png'
+import linkedin from '../public/linkedin.png'
+import medium from '../public/medium.png'
 
 export function Footer() {
   return (
     <div className='p-12  m-auto max-w-[1280px]'>
-        <div className="grid grid-cols-4 sm:grid-cols-6 border-b pb-8 border-producttext">
-            <div className='w-[50%]'>
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-6 border-b pb-8 border-producttext">
+            <div className='w-[50%] col-span-full sm:col-span-1' >
                 <Image src={logo} alt='logo'/>
             </div>
             <div className='text-white flex flex-col gap-4 text-sm'>
@@ -35,11 +37,11 @@ export function Footer() {
                 <span>wine</span>
                 <span>Blog</span>
             </div>
-            <div className='flex items-start justify-self-end gap-2'>
-                {/* <Image src={logo} alt='logo'/> */}
+            <div className='flex items-start  sm:justify-self-end gap-2'>
+                <Image src={medium} alt='medium'/>
                 <Image src={fb} alt='fb'/>
                 <Image src={insta} alt='fb'/>
-                {/* <Image src={logo} alt='logo'/> */}
+                <Image src={linkedin} alt='linkedin'/>
             </div>
         </div>
         <div className='flex gap-8 justify-end py-4 text-sm text-white'>
