@@ -18,7 +18,7 @@ export default function BrandIndex() {
 
     return (
         <div className="my-16">
-            <h1 className={"my-8 mx-6 " + styles.title}>Choose your favorite brand to see it's products</h1>
+            <h1 className={"my-8 mx-6 " + styles.title}>Choose your favorite brand to see its products</h1>
             <div className='flex flex-wrap justify-center my-24 gap-x-16 gap-y-10 mx-10'>
                 {brandsList.map((brand) => {
                     return <div key={brand.id}><Link href={`brand/${brand.name}`}>{BrandCard(brand)}</Link></div>;
