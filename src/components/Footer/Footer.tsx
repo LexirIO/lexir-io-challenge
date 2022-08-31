@@ -131,7 +131,7 @@ function Footer() {
         <hr className="my-6 border-gray-200"></hr>
         <div className="flex justify-between">
           <span className=" text-gray-500">
-            © 2022
+            © 2022{" "}
             <a href="#" className="hover:underline">
               Lexir Inc.
             </a>
