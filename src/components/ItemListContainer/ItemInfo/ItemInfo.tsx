@@ -1,6 +1,6 @@
 function ItemInfo() {
   return (
-    <div className="max-w-lg mb-8 border-solid border border-slate-200 h-fit ">
+    <div className="max-w-sm lg:col-span-4 mb-8 border-solid border border-slate-200 h-fit ">
       <div className="p-6">
         <div className="main-title mb-12 uppercase">
           <h1 className="text-center text-[#7E143C] text-3xl md:text-5xl font-bold mb-2">

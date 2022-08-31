@@ -19,9 +19,11 @@ function ItemListContainer() {
   }
 
   return (
-    <div className="bg-[white] grid grid-cols-1 justify-items-center my-20 mx-8 ">
-      <ItemInfo />
-      <ItemList products={products} />
+    <div className="max-w-screen-xl mx-auto">
+      <div className="bg-[white] grid grid-cols-1 lg:grid-cols-12 justify-items-center lg:justify-items-stretch my-20 mx-8 gap-8">
+        <ItemInfo />
+        <ItemList products={products} />
+      </div>
     </div>
   );
 }

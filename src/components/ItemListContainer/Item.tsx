@@ -1,4 +1,4 @@
-import { BsPlusLg } from "react-icons/Bs";
+import { BsPlusLg } from "react-icons/bs";
 
 function Item({ product }: any) {
   return (
