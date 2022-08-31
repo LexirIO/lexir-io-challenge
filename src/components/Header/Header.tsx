@@ -1,13 +1,12 @@
 import { FaUserCircle, FaShoppingCart } from "react-icons/fa";
-import { AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full bg-white shadow-lg ">
-      <div className="justify-between  px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+    <nav className="w-full bg-white shadow-lg">
+      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="#">
@@ -57,20 +56,20 @@ export default function Header() {
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-black hover:text-indigo-200 uppercase">
+            <ul className="items-center  justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <li className="text-black text-right uppercase">
                 <a href="#">Products</a>
               </li>
-              <li className="text-black hover:text-indigo-200 uppercase">
+              <li className="text-black text-right uppercase">
                 <a href="#">Brand</a>
               </li>
-              <li className="text-black hover:text-indigo-200 flex flex-row items-center relative uppercase">
+              <li className="text-black flex flex-row  items-center justify-end relative uppercase">
                 <FaUserCircle className="mr-2" />
                 <a href="#">Hello, Leandro</a>
               </li>
-              <li className="text-black hover:text-indigo-200 flex flex-row items-center relative uppercase">
-                <FaShoppingCart className="mr-2" />{" "}
-                <span className="absolute bottom-[15px] left-[9px] bg-[green] text-white border-[2px] border-white flex items-center justify-center rounded-full h-4 w-4 text-[6px] ">
+              <li className="text-black flex flex-row justify-end items-center relative uppercase">
+                <FaShoppingCart className="mr-2" />
+                <span className="absolute bottom-[15px] right-[35px] bg-[green] text-white border-[2px] border-white flex items-center justify-center rounded-full h-4 w-4 text-[6px] ">
                   3
                 </span>
                 <a href="#">Cart</a>
