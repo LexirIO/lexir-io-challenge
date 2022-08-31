@@ -46,112 +46,112 @@ import product4 from '../public/packshot-mr-gaston-brandy.png'
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:1
+            id:5
           },
           {
             image: product2,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:2
+            id:6
           },
           {
             image: product3,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:3
+            id:7
           },
           {
             image: product4,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:4
+            id:8
           },
           {
             image: product1,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:1
+            id:9
           },
           {
             image: product2,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:2
+            id:10
           },
           {
             image: product3,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:3
+            id:11
           },
           {
             image: product4,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:4
+            id:12
           },
           {
             image: product1,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:1
+            id:13
           },
           {
             image: product2,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:2
+            id:14
           },
           {
             image: product3,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:3
+            id:15
           },
           {
             image: product4,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:4
+            id:16
           },
           {
             image: product1,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:1
+            id:17
           },
           {
             image: product2,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:2
+            id:18
           },
           {
             image: product3,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:3
+            id:19
           },
           {
             image: product4,
             name:"MR GASTON",
             company:"BRANDY",
             price:32,
-            id:4
+            id:20
           },
     ]
     
