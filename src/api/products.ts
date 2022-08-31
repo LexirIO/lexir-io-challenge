@@ -4,7 +4,7 @@ import branneri from "../assets/Products/branneri.jpg";
 import gaston from "../assets/Products/gaston.jpg";
 import silentPool from "../assets/Products/silentPool.jpg";
 import umami from "../assets/Products/umami.jpg";
-import { Category } from "src/common";
+import { Category } from "src/Models";
 
 
 export default

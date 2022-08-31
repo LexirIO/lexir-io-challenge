@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Product } from "src/common";
+import { Product } from "src/Models";
 import styles from "../styles/Product.module.css";
 import products from "../api/products";
 import AddIcon from "../assets/icons/addIcon";
@@ -30,7 +30,7 @@ export default function Products(props: ProductsProps) {
 
     let products: Product[] | null = getApiData(props.search);
 
-    return <div className={"flex gap-8 flex-wrap " + styles.lato}>
+    return <div className={"flex gap-8 flex-wrap justify-center lg:justify-evenly " + styles.lato}>
         {products?.map((product: Product) => {
             return ProductCard(product);
         })}

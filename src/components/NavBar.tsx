@@ -7,14 +7,20 @@ import styles from "../styles/NavBar.module.css";
 export default function NavBar() {
     return (
         <div>
-            <nav className="container flex flex-row justify-between mx-auto py-8">
+            <nav className="flex flex-row justify-between mx-auto px-8 py-8">
 
                 {/* H1 Lexir is "here" but invisible in order to get SEO advantages */}
                 <h1 className="invisible absolute"> Lexir </h1>
 
                 <Logo />
+                
+                <div className={styles.hamburguer}>
+                    <div className={styles.line}></div>
+                    <div className={styles.line}></div>
+                    <div className={styles.line}></div>
+                </div>
 
-                <ul className={`flex flex-row justify-evenly gap-10 ` + styles.navList}>
+                <ul className={`md:flex flex-row justify-evenly gap-10 hidden ` + styles.navList}>
                     <li>PRODUCTS</li>
                     <li>BRANDS</li>
                     <li><ProfileIcon /> HELLO, LEONARDO</li>
