@@ -1,4 +1,5 @@
-import { getProducts } from "../../pages/products/products";
+import React from "react";
+import { getProducts } from "../products/products";
 import { useState, useEffect } from "react";
 import ItemList from "../ItemListContainer/ItemList";
 import ItemInfo from "./ItemInfo/ItemInfo";
