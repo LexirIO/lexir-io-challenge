@@ -127,6 +127,38 @@ const data = [
     brand: "BRANDY",
     alt: "mr-gatson",
   },
+  {
+    id: 17,
+    image: "audemus-umami-gin-bottle",
+    name: "MR GATSON",
+    price: 32,
+    brand: "BRANDY",
+    alt: "mr-gatson",
+  },
+  {
+    id: 18,
+    image: "silent-pool-silent-pool-gin-bottle",
+    name: "MR GATSON",
+    price: 32,
+    brand: "BRANDY",
+    alt: "mr-gatson",
+  },
+  {
+    id: 19,
+    image: "stockholms-branneri-pink-gin-bottle",
+    name: "MR GATSON",
+    price: 32,
+    brand: "BRANDY",
+    alt: "mr-gatson",
+  },
+  {
+    id: 20,
+    image: "mr-gaston-brandy-bottle",
+    name: "MR GATSON",
+    price: 32,
+    brand: "BRANDY",
+    alt: "mr-gatson",
+  },
 ];
 
 export default data;
