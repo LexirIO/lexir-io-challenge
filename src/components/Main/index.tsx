@@ -8,23 +8,23 @@ interface MainProps {
 
 const Main = ({ addItemHandler }: MainProps): JSX.Element => {
   return (
-    <div className="main-container flex-row">
+    <main className="main-container flex-row">
       {/* Product Info */}
 
       {/* Upper Part of Product Info */}
-      <div className="product-info">
+      <section className="product-info">
         <img
           src="/static/assets/logo-icons/baldoria-logo.svg"
           alt="avatar icon"
         />
-        <div className="product-name">Baldoria Vermouth</div>
+        <h2 className="product-name">Baldoria Vermouth</h2>
         <div className="story-wrapper">
-          <div className="product-story">
+          <article className="product-story">
             Badoria rosso is a red vermouth that balances fresh, herby bitter
             notes against. Kiss My Rhubarb takes its origins from an old
             handwritten recipe from co-creators Niels’ and Wouters’ rebellious
             grandparents.
-          </div>
+          </article>
           <div className="read-more">Read More</div>
         </div>
 
@@ -54,11 +54,11 @@ const Main = ({ addItemHandler }: MainProps): JSX.Element => {
             <div className="category-card">Vodka</div>
           </div>
         </div>
-      </div>
+      </section>
       {/*  */}
 
       {/* Product Items */}
-      <div className="product-items flex-row">
+      <section className="product-items flex-row">
         {Array.from(Array(20).keys()).map((_, idx) => {
           return (
             <ProductItem
@@ -68,9 +68,9 @@ const Main = ({ addItemHandler }: MainProps): JSX.Element => {
             />
           );
         })}
-      </div>
+      </section>
       {/*  */}
-    </div>
+    </main>
   );
 };
 

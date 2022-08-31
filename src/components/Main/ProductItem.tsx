@@ -29,7 +29,7 @@ const ProductItem = ({
       </div>
       <div className="product-infos">
         <div className="name-and-price">
-          <div className="name">Mr Gaston</div>
+          <h3 className="name">Mr Gaston</h3>
           <div className="price">€32</div>
         </div>
 

@@ -8,18 +8,18 @@ const NavLinks = ({ links }: NavLinksProps): JSX.Element => {
   // here is a pretty looking es6 array destructure increasing readibility
   const [title, ...subLinks] = links;
   return (
-    <div className="nav-links-container">
-      <div className="nav-title">{title}</div>
+    <ul className="nav-links-container">
+      <h5 className="nav-title">{title}</h5>
       <>
         {subLinks.map((link, idx) => {
           return (
-            <div key={idx} className="nav-link">
+            <li key={idx} className="nav-link">
               {link}
-            </div>
+            </li>
           );
         })}
       </>
-    </div>
+    </ul>
   );
 };
 

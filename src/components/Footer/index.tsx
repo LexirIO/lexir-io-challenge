@@ -11,51 +11,62 @@ const Footer = (): JSX.Element => {
   // full expresive arrow function return statement, so I can add logic later easily.
   return (
     // Main Footer Container
-    <div className="footer-container">
+    <footer className="footer-container">
       {/* Upper Footer */}
-      <div className="upper-footer">
+      <header className="upper-footer">
         <img
           className="logo-light"
           src="/static/assets/logo-icons/logo-light.svg"
           alt="light colored company logo"
         />
-        <div className="navs">
+        <nav className="navs">
           <NavLinks key="community" links={links1} />
           <NavLinks key="platform" links={links2} />
           <NavLinks key="company" links={links3} />
           <NavLinks key="lexirshop" links={links4} />
-        </div>
+        </nav>
 
         {/* Social Icons */}
-        <div className="socials flex-row">
-          <img src="/static/assets/social-icons/medium.svg" alt="medium icon" />
-          <img
-            src="/static/assets/social-icons/facebook.svg"
-            alt="facebook icon"
-          />
-          <img
-            src="/static/assets/social-icons/instagram.svg"
-            alt="instagram icon"
-          />
-          <img
-            src="/static/assets/social-icons/linkedin.svg"
-            alt="linkedin icon"
-          />
-        </div>
+        <ul className="socials flex-row">
+          <li>
+            <img
+              src="/static/assets/social-icons/medium.svg"
+              alt="medium icon"
+            />
+          </li>
+          <li>
+            <img
+              src="/static/assets/social-icons/facebook.svg"
+              alt="facebook icon"
+            />
+          </li>
+          <li>
+            <img
+              src="/static/assets/social-icons/instagram.svg"
+              alt="instagram icon"
+            />
+          </li>
+          <li>
+            <img
+              src="/static/assets/social-icons/linkedin.svg"
+              alt="linkedin icon"
+            />
+          </li>
+        </ul>
         {/*  */}
-      </div>
+      </header>
       {/*  */}
 
       {/* Lower Footer */}
-      <div className="lower-footer">
+      <footer className="lower-footer">
         <div className="copyright">© 2022 Lexir Inc.</div>
         <div className="lower-right-footer">
           <div className="privacy">Privacy</div>
           <div className="terms-of-service">Terms of service</div>
         </div>
-      </div>
+      </footer>
       {/*  */}
-    </div>
+    </footer>
   );
 };
 
