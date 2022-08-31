@@ -1,3 +1,4 @@
+import { DrinkCardContainer } from "@components/DrinkCardContainer";
 import { Footer } from "@components/Footer";
 import { Navbar } from "@components/Navbar";
 import { SideMenu } from "@components/SideMenu";
@@ -13,10 +14,9 @@ export default function Home() {
           <SideMenu />
         </div>
         <div className="w-9/12">
-          Cards
+          <DrinkCardContainer />
         </div>
       </div>
-
       <Footer />
     </>
   );

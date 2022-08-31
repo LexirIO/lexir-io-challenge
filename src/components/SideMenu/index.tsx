@@ -2,7 +2,7 @@ import React from "react";
 
 export const SideMenu = () => {
   return (
-    <div className=" border-2 border-gray-600 px-8 pt-5 pb-20 flex flex-col items-center ">
+    <div className=" shadow px-8 pt-5 pb-20 flex flex-col items-center ">
       <img src="/assets/img/baldoria-logo.png" className="w-50 pb-10" />
       <div className="font-bold text-4xl p-5">Baldoria Vermouth</div>
       <div className="px-6">

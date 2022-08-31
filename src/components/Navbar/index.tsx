@@ -2,9 +2,9 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg shadow-md py-5 bg-white relative flex items-center w-full justify-between">
-      <div className="flex justify-between items-center w-full px-10 py-2">
-        <img src="/assets/img/lexir-logo-black.svg" className="h-8"/>
+    <nav className="navbar navbar-expand-md shadow-md py-5 bg-white relative flex items-center justify-between">
+      <div className="flex justify-between items-center w-10/12  px-10 py-2">
+        <img src="/assets/img/lexir-logo-black.svg" className="h-8" />
         <div className="navbar-collapse collapse grow items-center" id="navbarSupportedContentY">
           <ul className="navbar-nav flex justify-end">
             <li className="nav-item">
