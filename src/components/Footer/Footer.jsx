@@ -6,7 +6,7 @@ import images from "../../assets";
 const Footer = () => {
   return (
     <div className='py-8 bg-[#2D2D2D] font-lato'>
-      <div className='w-[95%] mx-auto flex justify-between'>
+      <div className='w-[85%] mx-auto flex justify-between'>
         {/* Footer Logo */}
         <div>
           <Image src={images.footerLogo} alt='footer_logo' />
@@ -74,7 +74,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright and privacy policy */}
-      <div className='w-[95%] mx-auto text-white flex justify-between items-center border-t pt-6 mt-10 border-[#8F8F8F]'>
+      <div className='w-[85%] mx-auto text-white flex justify-between items-center border-t pt-6 mt-10 border-[#8F8F8F]'>
         <p>&copy; 2022 Lexir Inc.</p>
         <div>
           <span className='space-x-10'>
