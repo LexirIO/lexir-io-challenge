@@ -12,7 +12,6 @@ export function Navigation() {
 
   const togleShow = ()=> {
     setShowMenu(!showMenu)
-    console.log(showMenu)
   }
 
   let visible = {display:'block'}
@@ -26,18 +25,14 @@ export function Navigation() {
         <Image   src={logo} alt="logo" objectFit="contain" />
       </div>
 
-      <nav className="  hidden sm:flex gap-6 text-sm font-medium list-none ">
+      <nav className="  hidden sm:flex gap-6 text-sm font-medium ">
+          <Link href='/'><a>PRODUCTS</a></Link>
+          <Link href='/'><a>BRANDS</a></Link>
           <Link href='/'>
-          <li >PRODUCTS</li>
-          </Link>
-          <Link href='/'>
-          <li >BRANDS</li>
-          </Link>
-          <Link href='/'>
-          <li className="flex items-center gap-2">
+          <a className="flex items-center gap-2">
               <Image src={user} alt='user'/>
               <span >HELLO, LEANDRO</span>
-          </li>
+          </a>
           </Link>
       </nav>
 
@@ -49,18 +44,14 @@ export function Navigation() {
       {showMenu && (
          <div className=" absolute z-10 p-8 top-20 left-0 bg-white w-full shadow-md ">
          <nav className="list-none flex flex-col gap-4 text-sm font-medium ">
-             <Link href='/'>
-             <li >PRODUCTS</li>
-             </Link>
-             <Link href='/'>
-             <li >BRANDS</li>
-             </Link>
-             <Link href='/'>
-             <li className="flex items-center gap-2">
-                 <Image src={user} alt='user'/>
-                 <span >HELLO, LEANDRO</span>
-             </li>
-             </Link>
+         <Link href='/'><a>PRODUCTS</a></Link>
+          <Link href='/'><a>BRANDS</a></Link>
+          <Link href='/'>
+          <a className="flex items-center gap-2">
+              <Image src={user} alt='user'/>
+              <span >HELLO, LEANDRO</span>
+          </a>
+          </Link>
          </nav>
        </div>
       )}
