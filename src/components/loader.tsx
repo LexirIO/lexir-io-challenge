@@ -1,6 +1,6 @@
 import { withRouter } from "next/router";
 
-function Loader({ router }) {
+function Loader({ router } : any) {
   return (
     <div className="flex fixed w-screen h-screen justify-center items-center top-0 left-0 bg-light dark:bg-dark">
       <div role="status">
