@@ -14,8 +14,8 @@ const navItems = [
 export default function Header() {
 	return (
 		<header className='bg-white shadow'>
-			<div className='max-w-[1280px] h-[104px] mx-auto px-8 py-10 flex justify-between items-center'>
-				<Image src={logo} width={103} height={24} alt='lexir' />
+			<div className='max-w-[1280px] mx-auto px-8 py-10 flex justify-between items-center'>
+				<Image src={logo} alt='lexir' />
 
 				<nav>
 					<ul className='flex items-center gap-10'>
