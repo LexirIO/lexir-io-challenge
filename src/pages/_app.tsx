@@ -1,7 +1,12 @@
+import { ProductContextProvider } from "src/context/ProductsContext";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: any) {
-  return <Component {...pageProps} />;
+  return (
+    <ProductContextProvider>
+      <Component {...pageProps} />
+    </ProductContextProvider>
+  );
 }
 
 export default MyApp;
