@@ -6,5 +6,5 @@
 
 html,
 body {
-	@apply h-full bg-white;
+	@apply h-full bg-white font-lato font-normal;
 }
