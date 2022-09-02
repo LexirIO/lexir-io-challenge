@@ -12,7 +12,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Lexir Frontend Assessment!</a>
+          Welcome to <a href="https://nextjs.org">PR Example</a>
         </h1>
 
         <p className={styles.description}>
