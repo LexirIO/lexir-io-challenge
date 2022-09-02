@@ -1,0 +1,8 @@
+export default function CategoriesIcon() {
+    return <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 6.25L11.5 1L1 6.25V16.75L11.5 22L22 16.75V6.25Z" stroke="black"  />
+        <path d="M1 6.25L11.5 11.5M11.5 22V11.5M22 6.25L11.5 11.5M16.75 3.625L6.25 8.875" stroke="black" />
+    </svg>
+
+
+}
