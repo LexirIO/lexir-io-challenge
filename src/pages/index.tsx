@@ -1,25 +1,32 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Container from "@components/Layout";
+import CardInfo from "@components/cardinfo";
+import ProductList from "@components/productlist";
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Lexir Frontend Assessment!</title>
-        <meta name="description" content="Lexir Frontend Assessment!" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+import { Product } from "src/types/product";
+import { productList } from "src/services/products";
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Lexir Frontend Assessment!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-      </main>
-    </div>
-  );
+interface HomeProps {
+  products: Product[];
 }
+
+function Home({products}: HomeProps) {
+  return (
+    <Container title="Home">
+      <div className="flex flex-row px-8 mt-10">
+        <CardInfo />
+        <ProductList products={products} />
+      </div>
+    </Container>
+  )
+}
+
+export async function getServerSideProps () {
+  const res = await productList();
+  return {
+    props: {
+      products: res.data,
+    }
+  }
+}
+
+export default Home;
