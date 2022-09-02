@@ -1,16 +1,17 @@
 import Head from "next/head";
+import { useSelector } from "react-redux";
+import { RootState } from "src/app/store";
 import { CompanyCard } from "src/Components/CompanyCard";
 import { Footer } from "src/Components/Footer";
 import { Navigation } from "src/Components/Navigation";
 import { ProductCard } from "src/Components/ProductCard";
-import { products } from "src/Data/Products"; 
+import products from "../Data/Products.json"; 
 
 
 
 
 export default function Home() {
-   
-
+  
 
   return (
     <>
