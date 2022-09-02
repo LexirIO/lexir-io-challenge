@@ -1,25 +1,34 @@
+import fetcher from "@utils/fetcher";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import { Product } from "src/types";
+import Aside from "../components/Home/Aside";
+import Shop from "../components/Home/Shop";
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Lexir Frontend Assessment!</title>
-        <meta name="description" content="Lexir Frontend Assessment!" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Lexir Frontend Assessment!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-      </main>
-    </div>
-  );
+interface Props {
+  data: Product[];
 }
+
+const Home = ({ data }: Props) => {
+  return (
+    <>
+      <Head>
+        <title>Lexir - Farhad Faraji</title>
+      </Head>
+      <div className="mt-10 mb-20 mx-8.5 flex flex-col items-center lg:items-start lg:flex-row lg:justify-between gap-2 ">
+        <Aside />
+        <Shop data={data} />
+      </div>
+    </>
+  );
+};
+
+export async function getServerSideProps() {
+  const data = await fetcher("/api/products");
+  return {
+    props: {
+      data,
+    },
+  };
+}
+
+export default Home;
