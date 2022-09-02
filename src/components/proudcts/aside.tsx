@@ -10,7 +10,7 @@ export function AsideComponent() {
         mb-[20px] md:mt-0 lg:mr-[20px]
         p-[10px]
         flex flex-col justify-start items-center
-        border-[1px] boder-[#F2F2F2]
+        md:border-[1px] md:boder-[#F2F2F2]
         "
     >
       <div className="w-[215px] h-[75px] relative mx-auto">
