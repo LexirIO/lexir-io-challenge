@@ -3,9 +3,23 @@ import React from "react";
 import Layout from "../components/layout";
 import Router from "next/router";
 import Loader from "../components/loader";
+import type { ReactElement, ReactNode } from 'react'
+import type { NextPage } from 'next'
+import type { AppProps } from 'next/app'
 
-function MyApp({ Component, pageProps } : any) {
+export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
+  getLayout?: (page: ReactElement) => ReactNode
+}
+
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout
+}
+
+
+
+function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const [loading, setLoading] = React.useState(false);
+  const getLayout = Component.getLayout ?? ((page) => page);
   React.useEffect(() => {
     const start = () => {
       // console.log("start");
@@ -24,10 +38,12 @@ function MyApp({ Component, pageProps } : any) {
       Router.events.off("routeChangeError", end);
     };
   }, []);
-  const getLayout = Component.getLayout || (({page} : any) => page);
-  return getLayout(
+  
 
-      <Layout>{loading ? <Loader /> : <Component {...pageProps} />}</Layout>
+  return getLayout(
+    <Layout>
+          {loading ? <Loader /> : <Component {...pageProps} />}
+    </Layout>
   );
 }
 

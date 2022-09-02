@@ -1,4 +1,3 @@
-import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 export default function Socials() {
 

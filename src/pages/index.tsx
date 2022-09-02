@@ -1,6 +1,11 @@
 import Head from "next/head";
-const titleName = "Lexir Frontend Assessment!";
-export default function Home() {
+import Layout from "../components/layout";
+import type { ReactElement } from 'react';
+import type { NextPageWithLayout } from './_app';
+
+
+const Page: NextPageWithLayout = () => {
+    const titleName = "Lexir Frontend Assessment!";
   return (
     <div>
       <Head>
@@ -15,3 +20,16 @@ export default function Home() {
     </div>
   );
 }
+
+Page.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Layout>
+      {page}      
+    </Layout>
+  )
+}
+
+export default Page;
+
+
+  

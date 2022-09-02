@@ -1,7 +1,7 @@
 export default function NavBar() {
   return (
     <nav className="">
-      <div></div>
+      <div>h</div>
     </nav>
   );
 }
