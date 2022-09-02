@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       colors: {
         light: "#ffffff", // White
-        dark: "#0f172a", // slate-900
+        dark: "#4F4F4F", // black-800
       },
     },
   },
