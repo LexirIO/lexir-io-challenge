@@ -1,25 +1,18 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import BrandCard from "@components/BrandCard";
+import Footer from "@components/Footer";
+import Header from "@components/Header";
+import Products from "@components/Products";
 
 export default function Home() {
+  
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Lexir Frontend Assessment!</title>
-        <meta name="description" content="Lexir Frontend Assessment!" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Lexir Frontend Assessment!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
+    <div>
+      <Header />
+      <main className='flex py-10 px-8 lg:justify-center'>  
+        <BrandCard />
+        <Products />
       </main>
+      <Footer />
     </div>
   );
 }
