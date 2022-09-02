@@ -87,7 +87,7 @@ Yes, as long as the points from the above section [Coding guidelines] are not vi
 ### Junior Developers _and_ Frontend Heroes
 
 1. Fork this repo
-2. Design to be developed: https://www.figma.com/file/G1uRC23QIVkKzLOif8MqHf/Tech-Assessment
+2. Design to be developed: https://www.figma.com/file/G1uRC23QIVkKzLOif8MqHf/Tech-Assessment-V1.0.2
 3. Tailwind Implementation
    - Please add to the existing project the Tailwind CSS framework to achieve the required design and planned behavior.
 4. HTML markup
@@ -115,6 +115,6 @@ Please remember, when running all tasks in the package.json scripts there should
 
 Optionally: you can add a `SOLUTION.md` file with any additional needed instructions to run code and any comments (explaining your decisions, making suggestions, etc) about this challenge and your solution.
 
-Finally, commit (and share the link) and zip archive with your solution which you send back as an email to the human resource employee you are in contact with and tell her/him if you ultimately applied as a Junior Frontend Developer or as a Frontend Hero. _PLEASE DO NOT INCLUDE THE `node_modules` folder_.
+Finally, commit (and share the link) with your solution which you send back as an email to the human resource employee you are in contact with and tell her/him if you ultimately applied as a Junior Frontend Developer or as a Frontend Hero. _PLEASE DO NOT INCLUDE THE `node_modules` folder_.
 
 Good luck :-)
