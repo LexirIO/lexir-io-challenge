@@ -1,25 +1,41 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import React, { FC } from 'react';
+import { IBottlesProps } from '../types/bottles';
+import { $api } from '@components/../servise/apiService';
+import Head from 'next/head';
+import Header from '@components/Header';
+import LeftContent from '@components/LeftContent';
+import RightContent from '@components/RightContent';
+import Footer from '@components/Footer';
 
-export default function Home() {
+const Home: FC<IBottlesProps> = ({ bottles }) => {
+
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Lexir Frontend Assessment!</title>
         <meta name="description" content="Lexir Frontend Assessment!" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/src/public/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Lexir Frontend Assessment!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-      </main>
-    </div>
+      <div className="container xl mx-auto">
+        <main className="container">
+          <Header />
+          <div className="mt-10 flex px-8">
+            <LeftContent />
+            <RightContent bottles={bottles} />
+          </div>
+          <Footer />
+        </main>
+      </div>
+    </>
   );
+};
+
+export default Home;
+
+export async function getServerSideProps() {
+  const res = await $api.get('api/bottles');
+  const data = res.data;
+  return {
+    props: { bottles: data }, // will be passed to the page component as props
+  };
 }
