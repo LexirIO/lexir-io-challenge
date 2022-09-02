@@ -13,7 +13,7 @@ export default function NavItem({
 	return (
 		<li>
 			<Link href={href}>
-				<a className='uppercase text-secondary text-sm hover:text-black flex items-center gap-1'>
+				<a className='uppercase text-primary text-sm hover:text-secondary flex items-center gap-1'>
 					{icon && <Image src={icon} alt={label} />}
 					{label}
 				</a>
