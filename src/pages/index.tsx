@@ -15,6 +15,10 @@ import userIcon from '@assets/user.svg';
 import cartIcon from '@assets/cart.svg';
 import kissMyRhubarbImg from '@assets/packshot-kiss-my-rhubarb.png';
 import netherlandsIcon from '@assets/icons8-netherlands.svg';
+import noseIcon from '@assets/nose.svg';
+import tongueIcon from '@assets/tongue.svg';
+import cocktailIcon from '@assets/cocktail.svg';
+import partyIcon from '@assets/party.svg';
 
 // required for header
 const navItems = [
@@ -119,7 +123,7 @@ export default function Home() {
 				<BreadCrumb />
 
 				{/* top section */}
-				<section className='flex gap-10 justify-between'>
+				<section className='flex gap-10 justify-between mb-20'>
 					<div className='w-7/12 max-w-[748px] h-[488px] bg-grey-100 border border-grey-200 flex justify-center items-center'>
 						<Image src={kissMyRhubarbImg} alt='kiss my rhubarb' />
 					</div>
@@ -163,6 +167,89 @@ export default function Home() {
 							<span>Add to Cart</span>
 							<span>${(dummyData.price * quant).toFixed(2)}</span>
 						</button>
+					</aside>
+				</section>
+
+				{/* mid section */}
+				<section className='flex gap-10 justify-between mb-20'>
+					<div className='w-7/12'>
+						<h1 className='font-bold text-2xl mb-8'>Product Details</h1>
+
+						<p className='max-w-[697px]'>
+							Kiss My Rhubarb takes its origins from an old handwritten recipe
+							from co-creators Niels&apos; and Wouters&apos; rebellious
+							grandparents. Using carefully hand-selected stalks of rhubarb, and
+							locally-sourced flowers and herbs, this summery aperitif perfectly
+							expresses the brimming liveliness that characterizes the Belgian
+							countryside in bloom.
+							<br />
+							<br />
+							Kiss My Rhubarb is created in collaboration with local producers
+							in Izegem that select only the freshest stalks of rhubarb using
+							attentive and sustainable practices. By avoiding the pitfalls of
+							overproduction and diminished flavour that large-scale harvesting
+							methods can bring, Kiss My&apos;s careful foraging process results
+							in an aperitif that emphasises the tangy juiciness of its primary
+							ingredient.
+						</p>
+					</div>
+
+					<aside className='flex-grow max-w-[380px]'>
+						<div className='mb-10'>
+							<h2 className='capitalize font-bold text-base mb-7'>
+								tasting notes
+							</h2>
+
+							<div className='flex gap-5 lg:gap-9 mb-7'>
+								<Image src={noseIcon} alt='smell' />
+
+								<ul className='uppercase flex gap-3 items-center'>
+									<li className='flex items-center gap-3'>Astringent</li>
+									<li className='w-1 h-1 rounded-full bg-secondary'></li>
+									<li className='flex items-center gap-3'>Fruity</li>
+									<li className='w-1 h-1 rounded-full bg-secondary'></li>
+									<li>Complex</li>
+								</ul>
+							</div>
+
+							<div className='flex gap-4 lg:gap-8'>
+								<Image src={tongueIcon} alt='smell' />
+
+								<ul className='uppercase flex gap-3 items-center'>
+									<li className='flex items-center gap-3'>BITTER</li>
+									<li className='w-1 h-1 rounded-full bg-secondary'></li>
+									<li className='flex items-center gap-3'>FLAMBOYANT</li>
+									<li className='w-1 h-1 rounded-full bg-secondary'></li>
+									<li>BRIGHT</li>
+								</ul>
+							</div>
+						</div>
+
+						<div className='mb-10'>
+							<h2 className='font-bold text-base mb-5'>Flavour Intensity</h2>
+
+							<ul className='grid grid-cols-5 gap-1'>
+								<li className='w-full h-1 bg-primary'></li>
+								<li className='w-full h-1 bg-primary'></li>
+								<li className='w-full h-1 bg-primary'></li>
+								<li className='w-full h-1 bg-grey-300'></li>
+								<li className='w-full h-1 bg-grey-300'></li>
+							</ul>
+						</div>
+
+						<div>
+							<h2 className='font-bold text-base mb-6'>Suggested Use</h2>
+
+							<div className='flex gap-3'>
+								<span className='rounded bg-grey-100 flex items-center gap-3 px-3 py-2 text-xs'>
+									In a cocktail <Image src={cocktailIcon} alt='cocktail' />
+								</span>
+
+								<span className='rounded bg-grey-100 flex items-center gap-3 px-3 py-2 text-xs'>
+									At a party <Image src={partyIcon} alt='party' />
+								</span>
+							</div>
+						</div>
 					</aside>
 				</section>
 			</main>
