@@ -44,7 +44,7 @@ const linksList = [
 	},
 ];
 
-export default function index() {
+export default function Footer() {
 	return (
 		<footer className='bg-primary text-white'>
 			<div className='max-w-[1280px] mx-auto px-8 pt-14 pb-12'>
