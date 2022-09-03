@@ -1,12 +1,12 @@
 import { BsBasket3 } from "react-icons/bs";
 import { Icon } from "@iconify/react";
 
-const Navbar = () => {
+const Header = () => {
     return (
         <nav>
             <div
-                id="navbar__container"
-                className="flex justify-between items-center w-full h-[104px] px-4 text-black bg-white fixed shadow-lg shadow-black "
+                id="header__container"
+                className="flex justify-between items-center w-full h-[104px] px-4 text-black bg-white fixed shadow-lg shadow-rose-100 "
             >
                 <div>
                     <picture>
@@ -40,4 +40,4 @@ const Navbar = () => {
         </nav>
     );
 };
-export default Navbar;
+export default Header;
