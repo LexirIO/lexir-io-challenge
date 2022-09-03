@@ -2,5 +2,5 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-    return <div>Main page body</div>;
+    return <div className="flex flex-row justify-center">main body</div>;
 }
