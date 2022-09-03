@@ -124,7 +124,7 @@ export default function Home() {
 				<BreadCrumb />
 
 				{/* top section */}
-				<section className='flex gap-10 justify-between mb-20'>
+				<section className='flex gap-10 justify-between mb-24'>
 					<div className='w-7/12 max-w-[748px] h-[488px] bg-grey-100 border border-grey-200 flex justify-center items-center'>
 						<Image src={kissMyRhubarbImg} alt='kiss my rhubarb' />
 					</div>
@@ -172,7 +172,7 @@ export default function Home() {
 				</section>
 
 				{/* mid section */}
-				<section className='flex gap-10 justify-between mb-20'>
+				<section className='flex gap-10 justify-between mb-24'>
 					<div className='w-7/12'>
 						<h1 className='font-bold text-2xl mb-8'>Product Details</h1>
 
@@ -307,7 +307,9 @@ export default function Home() {
 					</div>
 
 					<div className='pt-4 flex justify-between items-center'>
-						<span className='text-base font-light'>&copy; 2022 Lexir Inc.</span>
+						<span className='text-base font-light text-secondary'>
+							&copy; 2022 Lexir Inc.
+						</span>
 
 						<ul className='flex items-center gap-14'>
 							<li>
