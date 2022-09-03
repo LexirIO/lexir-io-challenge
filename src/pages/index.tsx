@@ -19,6 +19,7 @@ import noseIcon from '@assets/nose.svg';
 import tongueIcon from '@assets/tongue.svg';
 import cocktailIcon from '@assets/cocktail.svg';
 import partyIcon from '@assets/party.svg';
+import cellarImg from '@assets/cellar.png';
 
 // required for header
 const navItems = [
@@ -119,7 +120,7 @@ export default function Home() {
 			</header>
 
 			{/* main */}
-			<main className='max-w-[1280px] mx-auto px-8 py-10'>
+			<main className='max-w-[1280px] mx-auto px-8 pt-10'>
 				<BreadCrumb />
 
 				{/* top section */}
@@ -251,6 +252,30 @@ export default function Home() {
 							</div>
 						</div>
 					</aside>
+				</section>
+
+				{/* bot section */}
+				<section className='grid grid-cols-2'>
+					<div className='bg-grey-100 h-full flex flex-col justify-center gap-2 lg:gap-5 lg:px-8'>
+						<h1 className='font-source-serif-pro font-bold text-5xl leading-[56px]'>
+							Have a brand you&apos;d like to see on{' '}
+							<span className='text-success'>Lexir</span>?
+						</h1>
+
+						<p className='text-black-100 mb-6'>
+							Lexir is always looking to connect with new exciting craft brands
+							from around the world. If you have a brand in mind that you&apos;d
+							like to see on Lexir, let us know.
+						</p>
+
+						<button
+							title='suggest a brand'
+							className='bg-primary text-white py-3 w-[240px] text-center rounded font-bold'>
+							Suggest a Brand
+						</button>
+					</div>
+
+					<Image src={cellarImg} alt='cellar' />
 				</section>
 			</main>
 
