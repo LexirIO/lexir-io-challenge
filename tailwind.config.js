@@ -18,8 +18,9 @@ module.exports = {
 			},
 			grey: {
 				100: '#F9F9F9',
-				200: '#CACACA',
-				300: '#CCCCCC',
+				200: '#E7E7E7',
+				300: '#CACACA',
+				400: '#CCCCCC',
 			},
 			success: {
 				DEFAULT: '#1C8C64',
