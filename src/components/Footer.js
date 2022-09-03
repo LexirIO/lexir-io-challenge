@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <>
             <div className="flex flex-col items-center px-5 py-6 bg-[#2D2D2D] w-[1280px] h-[337px]">
-                <div className="flex flex-col items-center justify-between pt-[20px] py-[30px] w-[1219px] h-[257px] bg-slate-900 border-b border-[#8F8F8F]">
+                <div className="flex flex-col items-center justify-between pt-[20px] py-[30px] w-[1219px] h-[257px]  border-b border-[#8F8F8F]">
                     <div className="flex  items-start justify-between  py-[30px] pt-[0px] w-[1212px] h-[213px] ">
                         <div id="logoWht" className="">
                             {" "}
