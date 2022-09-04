@@ -8,6 +8,11 @@
     font-family: 'Lato-bold';
     src: url('../assets/fonts/Lato-Heavy.ttf');
   }
+
+  @font-face {
+    font-family: 'Source Serif Pro';
+    src: url('../assets/fonts/source-serif-pro-bold.ttf');
+  }
 }
 
 @tailwind base;

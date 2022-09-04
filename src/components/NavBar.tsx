@@ -6,26 +6,11 @@ import signInIcon from '../assets/images/signIn-icon.svg';
 import chartIcon from '../assets/images/chart-icon.svg';
 import Menu from './Menu';
 
-export default function NavBar() {
-  const [isDesktop, setDesktop] = useState(true);
+type Props = {
+  isDesktop: boolean;
+}
 
-  // useEffect is used just to avoid window is not defined error on Next.js
-  useEffect(
-    () => {
-      setDesktop(window.innerWidth >= 768);
-    },
-    [],
-  );
-
-  const updateMedia = () => {
-    setDesktop(window.innerWidth >= 768);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
-  });
-  
+export default function NavBar({isDesktop}: Props) {
   return (
     <nav className="sticky max-w-7xl mx-auto flex justify-between py-10 px-8 shadow-navbarShadow">
       <Link href="/">
@@ -37,23 +22,23 @@ export default function NavBar() {
       {isDesktop && (
         <div className="flex items-center gap-x-10">
           <Link href="products">
-            <a className="font-regular">PRODUCTS</a>
+            <a className="font-regular text-sm leading-5">PRODUCTS</a>
           </Link>
           <Link href="brands">
-            <a className="font-regular">BRANDS</a>
+            <a className="font-regular text-sm leading-5">BRANDS</a>
           </Link>
 
           <Link href="signIn">
             <a className="flex items-center justify-center gap-x-2.5">
               <Image src={signInIcon} alt="sign in" className="object-contain" />
-              <span className="font-regular">SIGN IN</span>
+              <span className="font-regular text-sm leading-5">SIGN IN</span>
             </a>
           </Link>
 
-          <Link href="signIn">
+          <Link href="chart">
             <a className="flex items-center justify-center gap-x-2.5">
               <Image src={chartIcon} alt="sign in" className="object-contain" />
-              <span className="font-regular">CHART</span>
+              <span className="font-regular text-sm leading-5">CHART</span>
             </a>
           </Link>
         </div>
