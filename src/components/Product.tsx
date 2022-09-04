@@ -43,15 +43,15 @@ export default function Product({isDesktop, handleChart}: Props) {
   };
 
   return (
-    <div className={cn("max-w-7xl mx-auto px-8 py-10 grid gap-20", {'grid-cols-twoToOne': isDesktop, 'grid-rows-2': !isDesktop})}>
+    <section className={cn("max-w-7xl mx-auto px-8 py-10 grid gap-20", {'grid-cols-twoToOne': isDesktop, 'grid-rows-2': !isDesktop})}>
       <Image src={product} alt="kiss my rhubarb" className={cn("object-contain absolute z-0", {'row-start-2': !isDesktop})} />
 
-      <div className={cn({'row-start-1': !isDesktop})}>
+      <article className={cn({'row-start-1': !isDesktop})}>
         <h1 className="font-sourceSerif text-5xl leading-tight">
           Kiss My Rhubarb
         </h1>
 
-        <p className="font-bold text-xl text-ccc">APERITIF</p>
+        <p className="font-bold text-xl text-fadeGray">APERITIF</p>
 
         <p className="flex justify-between items-center mt-10">
           <span className="flex gap-2 items-center">
@@ -106,7 +106,7 @@ export default function Product({isDesktop, handleChart}: Props) {
             <p className="text-white font-regular" >Add to Cart</p>
             <p className="text-white font-regular" >{`$${amount}`}</p>
         </button>
-      </div>
-    </div>
+      </article>
+    </section>
   )
 }

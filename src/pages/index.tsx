@@ -1,6 +1,7 @@
 import Destination from "@components/Destination";
 import NavBar from "@components/NavBar";
 import Product from "@components/Product";
+import ProductDetails from "@components/ProductDetails";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 
@@ -42,9 +43,8 @@ export default function Home() {
           <NavBar isDesktop={isDesktop} isChartFull={isChartFull} />
           <Destination />
         </header>
-        <section>
-          <Product isDesktop={isDesktop} handleChart={handleChart} />
-        </section>
+        <Product isDesktop={isDesktop} handleChart={handleChart} />
+        <ProductDetails isDesktop={isDesktop} />
       </main>
     </div>
   );

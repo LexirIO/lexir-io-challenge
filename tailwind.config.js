@@ -8,14 +8,23 @@ module.exports = {
     extend: {
       colors: {
         primary: '#2D2D2D',
+        fadeGray: '#CCC',
+        border: '#F2F2F2',
+        dots: '#8F8F8F',
+        lightGray: '#CACACA',
+        lightGray1: '#F9F9F9',
       },
       fontFamily: {
         regular: ['Lato'],
         bold: ['Lato-bold'],
+        sourceSerif: ['Source Serif Pro'],
       },
       boxShadow: {
         navbarShadow: '0px 4px 6px rgba(0, 0, 0, 0.06)',
       },
+      gridTemplateColumns: {
+        twoToOne: '2fr 1fr',
+      }
     },
   },
   plugins: [],
