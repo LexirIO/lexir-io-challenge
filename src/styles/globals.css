@@ -1,12 +1,12 @@
 @layer base {
   @font-face {
     font-family: 'Lato';
-    src: url('./fonts/Lato-Regular.ttf');
+    src: url('../assets/fonts/Lato-Regular.ttf');
   }
 
   @font-face {
     font-family: 'Lato-bold';
-    src: url('./fonts/Lato-Heavy.ttf');
+    src: url('../assets/fonts/Lato-Heavy.ttf');
   }
 }
 

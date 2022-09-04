@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../images/logo.svg';
-import signInIcon from '../images/signIn-icon.svg';
-import chartIcon from '../images/chart-icon.svg';
+import logo from '../assets/images/logo.svg';
+import signInIcon from '../assets/images/signIn-icon.svg';
+import chartIcon from '../assets/images/chart-icon.svg';
 import Menu from './Menu';
 
 export default function NavBar() {

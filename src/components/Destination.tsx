@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import homeIcon from '../images/home-icon.svg';
-import arrow from '../images/arrow.svg';
+import homeIcon from '../assets/images/home-icon.svg';
+import arrow from '../assets/images/arrow.svg';
 
 export default function Destination() {
   return (
