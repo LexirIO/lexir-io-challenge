@@ -2,6 +2,7 @@ import Destination from "@components/Destination";
 import NavBar from "@components/NavBar";
 import Product from "@components/Product";
 import ProductDetails from "@components/ProductDetails";
+import SuggestBrand from "@components/SuggestBrand";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 
@@ -35,7 +36,7 @@ export default function Home() {
       <Head>
         <title>Lexir Frontend Assessment!</title>
         <meta name="description" content="Lexir Frontend Assessment!" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="../public/favicon.ico" />
       </Head>
 
       <main className="bg-white">
@@ -45,6 +46,7 @@ export default function Home() {
         </header>
         <Product isDesktop={isDesktop} handleChart={handleChart} />
         <ProductDetails isDesktop={isDesktop} />
+        <SuggestBrand isDesktop={isDesktop} />
       </main>
     </div>
   );
