@@ -18,7 +18,7 @@ const AuthLayout = ({ children, head, title }: Props) => {
         <link rel="icon" href="/favicon.png" />
       </Head> */}
       {head}
-      <main className="content">{children}</main>
+      <main className="max-w-7xl mx-auto content">{children}</main>
       <Footer />
     </>
   );

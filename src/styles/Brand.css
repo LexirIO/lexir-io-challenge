@@ -1,3 +1,42 @@
-main.content{
+main.content {
     min-height: 60vh;
+}
+
+h2 {
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #2D2D2D;
+}
+
+p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.brand_card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 12px;
+    gap: 20px;
+    border: 1px solid #E7E7E7;
+    width: 347px;
+    height: 105px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+.brand_card > div{
+    margin-left: 3rem;
+}
+
+.brand_card:hover {
+    background: #F9F9F9;
+    cursor: pointer;
 }

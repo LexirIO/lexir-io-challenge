@@ -1,4 +1,5 @@
-import { FaUserCircle, FaShoppingCart } from "react-icons/fa";
+import { TbUserCircle } from "react-icons/tb";
+import { BsMinecartLoaded } from "react-icons/bs";
 import { useState } from "react";
 
 export default function Header() {
@@ -64,11 +65,11 @@ export default function Header() {
                 <a href="#">Brand</a>
               </li>
               <li className="text-black flex flex-row  items-center justify-end relative uppercase">
-                <FaUserCircle className="mr-2" />
+                <TbUserCircle className="mr-2" />
                 <a href="#">Sign in</a>
               </li>
               <li className="text-black flex flex-row justify-end items-center relative uppercase">
-                <FaShoppingCart className="mr-2" />
+                <BsMinecartLoaded className="mr-2" />
                 <a href="#">Cart</a>
               </li>
             </ul>

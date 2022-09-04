@@ -25,7 +25,10 @@
 // }
 
 import Head from "next/head";
+import Image from "next/image";
 import Layout from "@components/Layout";
+import Brands from "@components/Brands";
+import Publicize from "@components/Publicize";
 
 export default function Home() {
   return (
@@ -38,7 +41,10 @@ export default function Home() {
         </Head>
       }
     >
-      <div>Hello World</div>
+      <>
+        <Brands />
+        <Publicize />
+      </>
     </Layout>
   );
 }
