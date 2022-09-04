@@ -1,7 +1,6 @@
 import Head from "next/head";
 
-import BrandCollection from "./brandCollection";
-import Navigation from "./navigation";
+import Brands from "./brands";
 
 export default function Home() {
   return (
@@ -11,9 +10,8 @@ export default function Home() {
         <meta name="description" content="Lexir Frontend Assessment!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navigation />      
-      <BrandCollection />  
+     
+      <Brands />  
     </>
   );
 }

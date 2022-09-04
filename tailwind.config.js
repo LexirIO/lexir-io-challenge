@@ -7,8 +7,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'lato': ['Lato', 'sans-serif']
+        'lato': ['Lato', 'sans-serif'],
+        'serifpro': ['Source Serif Pro', 'sans-serif']
       },
+      colors: {
+        'light-black': '#2D2D2D',
+        'light-grey': '#F9F9F9'
+      }
     },
   },
   plugins: [],

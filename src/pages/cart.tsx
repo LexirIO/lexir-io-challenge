@@ -1,8 +1,13 @@
+import Navigation from "./navigation";
+
 const Cart = () => {
     return (
-        <h1 className="text-3xl font-bold">
-            Cart Page
-        </h1>
+        <>
+            <Navigation />
+            <h1 className="text-3xl font-bold">
+                Cart Page
+            </h1>
+        </>
     );
 }
 
