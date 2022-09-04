@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  // env: {
+  //   PUBLIC_URL: '/',
+  // }
 }
 
 module.exports = nextConfig
