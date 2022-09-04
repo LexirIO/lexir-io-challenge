@@ -1,7 +1,7 @@
 import Image from "next/image";
-import logoWht from "../public/logoWht.png";
-import socials from "../public/social-media.png";
-import copyRight from "../public/copyright.png";
+import logoWht from "../public/assets/logoWht.png";
+import socials from "../public/assets/social-media.png";
+import copyRight from "../public/assets/copyright.png";
 
 const Footer = () => {
     return (

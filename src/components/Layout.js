@@ -5,9 +5,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Header />
-            <div className="h-[104px]">
-                Spacer div to keep page uniform apperance
-            </div>
+
             {children}
             <Footer />
         </>

@@ -2,14 +2,16 @@ import { BsBasket3 } from "react-icons/bs";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
-import logoBlk from "../public/logoBlk.png";
+import logoBlk from "../public/assets/logoBlk.png";
+import basket from "../public/assets/shopBasket.png";
+import avatar from "../public/assets/userAvatar.png";
 
 const Header = () => {
     return (
         <header>
             <div
                 id="header__container"
-                className="flex justify-between items-center w-full h-[104px] px-4 text-black bg-white fixed shadow-lg shadow-rose-100 "
+                className="flex justify-between items-center w-full h-[104px] px-4 text-black bg-white  shadow-lg shadow-rose-100  "
             >
                 <Link href="/">
                     <div>
@@ -25,21 +27,14 @@ const Header = () => {
                     </Link>
                     <Link href="/signIn">
                         <div className="flex flex-row mr-10 ">
-                            <Icon
-                                id="user-icon"
-                                icon="carbon:user-avatar"
-                                className="text-xl mr-2 mt-[2px]"
-                            />
-                            <span>SIGN IN</span>
+                            <Image src={avatar} alt="logo" />
+                            <span className="ml-[8px]">SIGN IN</span>
                         </div>
                     </Link>
                     <Link href="/cart">
                         <div className="flex flex-row">
-                            <BsBasket3
-                                id="cart-icon"
-                                className="text-lg  mr-2 mt-[2px] "
-                            />
-                            <span>CART</span>
+                            <Image src={basket} alt="basket" />
+                            <span className="ml-[8px]">CART</span>
                         </div>
                     </Link>
                 </div>

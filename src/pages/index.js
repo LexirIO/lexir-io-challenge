@@ -1,6 +1,11 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Navbar from "../components/Navbar";
+import ProductDescription from "../components/ProductDescription";
 
 export default function Home() {
-    return <div className="flex flex-row justify-center">main body</div>;
+    return (
+        <>
+            <Navbar />
+            <ProductDescription />
+        </>
+    );
 }
