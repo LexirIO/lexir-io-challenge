@@ -5,6 +5,10 @@ import cn from 'classnames';
 import signInIcon from '../assets/images/signIn-icon.svg';
 import chartIcon from '../assets/images/chart-icon.svg';
 
+// type Props = {
+//   isChartFull: boolean;
+// };
+
 export default function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -30,7 +34,7 @@ export default function Menu() {
       </button>
 
       {isMenuOpen && (
-        <div className="absolute top-28 right-1 flex flex-col items-center gap-y-10 z-10 bg-primary p-20">
+        <div className="absolute top-28 right-1 flex flex-col items-center gap-y-10 z-50 bg-primary p-20">
           <Link href="products">
             <a className="font-regular text-white text-sm leading-5">PRODUCTS</a>
           </Link>
@@ -47,7 +51,7 @@ export default function Menu() {
 
           <Link href="chart">
             <a className="flex items-center justify-center gap-x-2.5">
-              <Image src={chartIcon} alt="sign in" className="object-contain bg-white rounded" />
+              <Image src={chartIcon} alt="sign in" className={cn("object-contain bg-white rounded")} />
               <span className="font-regular text-white text-sm leading-5">CHART</span>
             </a>
           </Link>

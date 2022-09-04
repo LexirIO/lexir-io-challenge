@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [isDesktop, setDesktop] = useState(true);
+  const [isChartFull, setIsChartFull] = useState(false);
 
   // useEffect is used just to avoid window is not defined error on Next.js
   useEffect(
@@ -18,6 +19,10 @@ export default function Home() {
   const updateMedia = () => {
     setDesktop(window.innerWidth >= 768);
   };
+
+  const handleChart = (value: boolean) => {
+    setIsChartFull(value);
+  }; 
 
   useEffect(() => {
     window.addEventListener("resize", updateMedia);
@@ -34,11 +39,11 @@ export default function Home() {
 
       <main className="bg-white">
         <header>
-          <NavBar isDesktop={isDesktop} />
+          <NavBar isDesktop={isDesktop} isChartFull={isChartFull} />
           <Destination />
         </header>
         <section>
-          <Product />
+          <Product isDesktop={isDesktop} handleChart={handleChart} />
         </section>
       </main>
     </div>
