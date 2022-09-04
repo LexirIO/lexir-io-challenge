@@ -54,7 +54,7 @@ const ProductDescription = () => {
                         </div>
                     </div>
                 </div>
-                <button className=" flex justify-around items-center bg-black w-[371px] h-[50px] rounded-md">
+                <button className=" flex justify-around items-center bg-black w-[371px] h-[50px] rounded-[5px]">
                     <div className="text-white">Add to Cart</div>
                     <div className="text-white">$230.33</div>
                 </button>
