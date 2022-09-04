@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import minusIcon from '@assets/minus.svg';
-import plusIcon from '@assets/plus.svg';
+import minusIcon from '@assets/svg/minus.svg';
+import plusIcon from '@assets/svg/plus.svg';
 
 export default function QuantityIncrementer({
 	quant,

@@ -9,17 +9,17 @@ import QuantityIncrementer from '@components/QuantityIncrementer';
 import Socials from '@components/Socials';
 
 // assets
-import logo from '@assets/logo.png';
-import logoTransparent from '@assets/logo-transparent.png';
-import userIcon from '@assets/user.svg';
-import cartIcon from '@assets/cart.svg';
-import kissMyRhubarbImg from '@assets/packshot-kiss-my-rhubarb.png';
-import netherlandsIcon from '@assets/icons8-netherlands.svg';
-import noseIcon from '@assets/nose.svg';
-import tongueIcon from '@assets/tongue.svg';
-import cocktailIcon from '@assets/cocktail.svg';
-import partyIcon from '@assets/party.svg';
-import cellarImg from '@assets/cellar.png';
+import logo from '@assets/img/logo.png';
+import logoTransparent from '@assets/img/logo-transparent.png';
+import kissMyRhubarbImg from '@assets/img/packshot-kiss-my-rhubarb.png';
+import cellarImg from '@assets/img/cellar.png';
+import userIcon from '@assets/svg/user.svg';
+import cartIcon from '@assets/svg/cart.svg';
+import netherlandsIcon from '@assets/svg/icons8-netherlands.svg';
+import noseIcon from '@assets/svg/nose.svg';
+import tongueIcon from '@assets/svg/tongue.svg';
+import cocktailIcon from '@assets/svg/cocktail.svg';
+import partyIcon from '@assets/svg/party.svg';
 
 // required for header
 const navItems = [

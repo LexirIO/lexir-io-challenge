@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import homeIcon from '@assets/home.svg';
-import arrowIcon from '@assets/right-half-arrow.svg';
+import homeIcon from '@assets/svg/home.svg';
+import arrowIcon from '@assets/svg/right-half-arrow.svg';
 
 export default function BreadCrumb() {
 	return (

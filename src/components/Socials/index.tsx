@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import mediumIcon from '@assets/medium.svg';
-import facebookIcon from '@assets/icons8-facebook 2.svg';
-import instagramIcon from '@assets/icons8-instagram 2.svg';
-import linkedinIcon from '@assets/linkedin.svg';
+import mediumIcon from '@assets/svg/medium.svg';
+import facebookIcon from '@assets/svg/icons8-facebook 2.svg';
+import instagramIcon from '@assets/svg/icons8-instagram 2.svg';
+import linkedinIcon from '@assets/svg/linkedin.svg';
 
 export default function Socials() {
 	return (
