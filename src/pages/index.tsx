@@ -1,4 +1,5 @@
 import Destination from "@components/Destination";
+import Footer from "@components/Footer";
 import NavBar from "@components/NavBar";
 import Product from "@components/Product";
 import ProductDetails from "@components/ProductDetails";
@@ -47,6 +48,7 @@ export default function Home() {
         <Product isDesktop={isDesktop} handleChart={handleChart} />
         <ProductDetails isDesktop={isDesktop} />
         <SuggestBrand isDesktop={isDesktop} />
+        <Footer />
       </main>
     </div>
   );
