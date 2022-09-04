@@ -10,10 +10,10 @@ const ProductDescription = () => {
                     <Image src={productImage} alt="product" />
                 </div>
             </div>
-            <div className="  flex flex-col items-center w-[389px] h-[440px] mt-10 mr-[35px] mb-[88px] ml-[74px] bg-slate-400 ">
+            <div className="  flex flex-col items-center w-[389px] h-[440px] mt-10 mr-[35px] mb-[88px] ml-[74px] ">
                 <div className=" text-5xl font-bold">
                     <h1 className="font-title pt-2.5">Kiss My Rhubarb</h1>
-                    <div className=" text-base  uppercase font-bold text-gray-200">
+                    <div className=" text-[20px]  uppercase font-bold text-gray-200">
                         Aperitif
                     </div>
                 </div>
