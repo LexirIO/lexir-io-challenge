@@ -1,4 +1,9 @@
-import { BsInstagram, BsLinkedin, BsFacebook, BsSnapchat } from "react-icons/bs";
+import {
+  BsInstagram,
+  BsLinkedin,
+  BsFacebook,
+  BsSnapchat,
+} from "react-icons/bs";
 
 function Footer() {
   return (
@@ -15,21 +20,9 @@ function Footer() {
               Community
             </h2>
             <ul className="text-white">
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Lexir for Brands
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Business Buyers
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Sales Afiliates
-                </a>
-              </li>
+              <li className="mb-2 hover:underline w-fit">Lexir for Brands</li>
+              <li className="mb-2 hover:underline w-fit">Business Buyers</li>
+              <li className="mb-2 hover:underline w-fit">Sales Afiliates</li>
             </ul>
           </div>
           <div>
@@ -37,21 +30,9 @@ function Footer() {
               Platform
             </h2>
             <ul className="text-white">
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Resources
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Pricing
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Get Started
-                </a>
-              </li>
+              <li className="mb-2 hover:underline w-fit">Resources</li>
+              <li className="mb-2 hover:underline w-fit">Pricing</li>
+              <li className="mb-2 hover:underline w-fit">Get Started</li>
             </ul>
           </div>
           <div>
@@ -59,21 +40,9 @@ function Footer() {
               Company
             </h2>
             <ul className="text-white">
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  About
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Contact
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Legal
-                </a>
-              </li>
+              <li className="mb-2 hover:underline w-fit">About</li>
+              <li className="mb-2 hover:underline w-fit">Contact</li>
+              <li className="mb-2 hover:underline w-fit">Legal</li>
             </ul>
           </div>
           <div>
@@ -81,49 +50,25 @@ function Footer() {
               Lexir Shop
             </h2>
             <ul className="text-white">
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Brands
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Spirits
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Wine
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Blog
-                </a>
-              </li>
+              <li className="mb-2 hover:underline w-fit">Brands</li>
+              <li className="mb-2 hover:underline w-fit">Spirits</li>
+              <li className="mb-2 hover:underline w-fit">Wine</li>
+              <li className="mb-2 hover:underline w-fit">Blog</li>
             </ul>
           </div>
           <div>
             <ul className="text-white flex text-gray-400">
               <li className="mb-4ml-3">
-                <a href="#" className="hover:underline">
-                  <BsInstagram className="mr-2" />
-                </a>
+                <BsInstagram className="mr-2  hover:text-white" />
               </li>
               <li className="mb-4 ml-3">
-                <a href="#" className="hover:underline">
-                  <BsFacebook className="mr-2" />
-                </a>
+                <BsFacebook className="mr-2  hover:text-white" />
               </li>
               <li className="mb-4 ml-3">
-                <a href="#" className="hover:underline">
-                  <BsLinkedin className="mr-2" />
-                </a>
+                <BsLinkedin className="mr-2  hover:text-white" />
               </li>
               <li className="mb-4 ml-3">
-                <a href="#" className="hover:underline">
-                  <BsSnapchat className="mr-2" />
-                </a>
+                <BsSnapchat className="mr-2  hover:text-white" />
               </li>
             </ul>
           </div>

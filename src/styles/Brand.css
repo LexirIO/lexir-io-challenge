@@ -40,3 +40,7 @@ p {
     background: #F9F9F9;
     cursor: pointer;
 }
+
+footer ul li{
+    cursor: pointer
+}
