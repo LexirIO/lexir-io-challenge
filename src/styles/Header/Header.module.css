@@ -1,0 +1,4 @@
+
+test {
+    @apply px-4 mx-auto max-w-screen-xl sm:px-6 lg:px-8
+}

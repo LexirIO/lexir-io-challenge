@@ -1,10 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Serif+Pro:wght@400;600;700&display=swap');
 html,
-body {
+body,div {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+ 
+
+  
 }
+
+html {
+  font-size: 62.5%;
+}
+
+
+
+/* 
 
 a {
   color: inherit;
@@ -19,8 +37,9 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
-}
+} */
