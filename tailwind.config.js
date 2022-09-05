@@ -10,7 +10,7 @@ module.exports = {
         primary: '#2D2D2D',
         fadeGray: '#CCC',
         border: '#F2F2F2',
-        dots: '#8F8F8F',
+        lightGray2: '#8F8F8F',
         lightGray: '#CACACA',
         lightGray1: '#F9F9F9',
         success: '#1C8C64',
