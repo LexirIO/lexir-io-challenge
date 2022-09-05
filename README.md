@@ -61,18 +61,18 @@ Please keep and use this structure.
 
 ### Coding guidelines
 
-1.  HTML
+1. HTML
 
     - Make sure to add all needed HTML so that it fits the exercise requirements.
     - Please use semantically correct HTML5 markup
 
-2.  JavaScript
+2. JavaScript
 
     - Please use Typescript, ReactJS is allowed
     - We would like to see YOUR clean and modular JavaScript / Typescript code (while commented when needed).
     - Use of recent JavaScript / Typescript features (eg: ES6, ES2016, ES2017) is highly encouraged as long as supported by latest chrome (so you shouldn't have to transpile / compile your JavaScript).
 
-3.  CSS
+3. CSS
 
     - We kindly ask you to use TAILWIND CSS
     - Another frameworks are not allowed
@@ -87,7 +87,7 @@ Yes, as long as the points from the above section [Coding guidelines] are not vi
 ### Junior Developers _and_ Frontend Heroes
 
 1. Fork this repo
-2. Design to be developed: https://www.figma.com/file/G1uRC23QIVkKzLOif8MqHf/Tech-Assessment-V1.0.2
+2. Design to be developed: <https://www.figma.com/file/G1uRC23QIVkKzLOif8MqHf/Tech-Assessment-V1.0.2>
 3. Tailwind Implementation
    - Please add to the existing project the Tailwind CSS framework to achieve the required design and planned behavior.
 4. HTML markup
@@ -101,8 +101,8 @@ Yes, as long as the points from the above section [Coding guidelines] are not vi
 
 ### BONUS (Optional for Frontend Heroes)
 
-7.  Leave an empty file named "I AM A FRONTEND HERO" in the root folder.
-8.  App's dynamic behavior
+7. Leave an empty file named "I AM A FRONTEND HERO" in the root folder.
+8. App's dynamic behavior
 
 - Create a API call inside of the folder pages/api to get all products
 - Consume and handle data from the API using SSE

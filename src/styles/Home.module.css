@@ -1,4 +1,4 @@
-.container {
+/* .container {
   padding: 0 2rem;
 }
 
@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -44,9 +45,9 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .card,
   .footer {
     border-color: #222;
@@ -57,4 +58,4 @@
   .logo img {
     filter: invert(1);
   }
-}
+} */
