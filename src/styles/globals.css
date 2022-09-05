@@ -8,6 +8,11 @@
     font-family: 'Lato-bold';
     src: url('../assets/fonts/Lato-Heavy.ttf');
   }
+
+  @font-face {
+    font-family: 'Source Serif Pro';
+    src: url('../assets/fonts/source-serif-pro-bold.ttf');
+  }
 }
 
 @tailwind base;
@@ -21,6 +26,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: #2D2D2D;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
