@@ -231,3 +231,5 @@ Now, all we have to do is add the component to ```ProductHightlight.tsx``` where
 ---
 
 ### Final Thoughts
+
+In a nutshell, the whole project was challenging, but presented some misconceptions. One of them would be grouping the right typography fonts. Although I managed to find the required fonts from google's font API, I didnt seem to get the correct typefaces-font weights when I was applying it to my project, followed by Figma's suggestions. Same goes for breakpoints for responsive design. Even though I navigated on Figma, looking for responsive design breakpoints I used some according to where each component would "break" in order to bring it back again to its original state.

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import logoVector from "@assets/footer/logo (1).svg";
-import linkedInVector from "@assets/footer/social_media/linkedIn.svg";
+import linkedInVector from "@assets/footer/social_media/linkedin.svg";
 import mediumVector from "@assets/footer/social_media/medium.svg";
 import facebookVector from "@assets/footer/social_media/facebook.svg";
 import instagramVector from "@assets/footer/social_media/instagram.svg";
