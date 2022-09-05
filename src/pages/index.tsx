@@ -66,7 +66,7 @@ export default function Home() {
                   <td className="py-[15px]">LXY-588-889</td>
                   <td>01 Sep, 2022</td>
                   <td>€199.25</td>
-                  <td>Paid</td>
+                  <td className="text-neutral-500">Paid</td>
                   <td>
                     <button className="py-[6px] px-[26px] rounded-[4px] text-[14px] bg-primary-700 text-white hover:opacity-90">
                       Request PDF
@@ -77,7 +77,7 @@ export default function Home() {
                   <td className="py-[15px]">LXY-588-889</td>
                   <td>01 Sep, 2022</td>
                   <td>€199.25</td>
-                  <td>Paid</td>
+                  <td className="text-neutral-500">Paid</td>
                   <td>
                     <button className="py-[6px] px-[26px] text-[14px]  rounded-[4px] bg-primary-700 text-white hover:opacity-90">
                       Request PDF
@@ -88,7 +88,7 @@ export default function Home() {
                   <td className="py-[15px]">LXY-588-889</td>
                   <td>01 Sep, 2022</td>
                   <td>€199.25</td>
-                  <td>Refunded</td>
+                  <td className="text-error-500">Refunded</td>
                   <td>
                     <button className="py-[6px] px-[26px]  text-[14px] rounded-[4px]  bg-primary-700 text-white hover:opacity-90">
                       Request PDF
