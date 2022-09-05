@@ -1,6 +1,6 @@
 import Image from "next/image";
-import houseIcon from "../public/assets/IconsHouse.png";
-import ChevronRightIcon from "../public/assets/IconsChevronRight.png";
+import houseIcon from "../public/assets/navbar/IconsHouse.png";
+import ChevronRightIcon from "../public/assets/navbar/IconsChevronRight.png";
 
 const Navbar = () => {
     return (

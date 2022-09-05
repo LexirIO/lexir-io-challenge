@@ -1,6 +1,6 @@
 import Image from "next/image";
-import productImage from "../public/assets/packshot-kiss-my-rhubarb.png";
-import BelFlag from "../public/assets/icons8-netherlands.png";
+import productImage from "../public/assets/productDescription/packshot-kiss-my-rhubarb.png";
+import BelFlag from "../public/assets/productDescription/icons8-netherlands.png";
 
 const ProductDescription = () => {
     return (

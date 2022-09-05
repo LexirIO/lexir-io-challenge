@@ -1,10 +1,8 @@
-import { BsBasket3 } from "react-icons/bs";
-import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
-import logoBlk from "../public/assets/logoBlk.png";
-import basket from "../public/assets/shopBasket.png";
-import avatar from "../public/assets/userAvatar.png";
+import logoBlk from "../public/assets/header/logoBlk.png";
+import basket from "../public/assets/header/shopBasket.png";
+import avatar from "../public/assets/header/userAvatar.png";
 
 const Header = () => {
     return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import BrandSuggestion from "../public/assets/brandSuggest.png";
-import BrandTitle from "../public/assets/brandTitle.png";
+import BrandSuggestion from "../public/assets/brandSuggestion/brandSuggest.png";
+import BrandTitle from "../public/assets/brandSuggestion/brandTitle.png";
 
 const BrandSuggest = () => {
     return (
