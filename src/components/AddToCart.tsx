@@ -11,7 +11,8 @@ interface Props {
 }
 
 const borderClasses = "border border-addToCartBorder rounded";
-const amountButtonClasses = "flex justify-center basis-1/3 h-[48px]";
+const amountButtonClasses =
+  "flex justify-center items-center basis-1/3 h-[48px]";
 
 function AddToCart({ volume, price }: Props) {
   const [amount, setAmount] = useState(2); // Number of units to add to cart
