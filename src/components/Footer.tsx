@@ -61,6 +61,7 @@ function Footer() {
           <div className="cursor-pointer h-[46px] ml-[18px]">
             <a>
               <Image
+                alt="social"
                 src={require(`../public/assets/social-${item}.svg`)}
                 height={18}
                 width={18}
@@ -79,7 +80,7 @@ function Footer() {
       <div className="max-w-[1210px] flex justify-between mx-auto">
         {/* Logo */}
         <div className="mt-[42px]">
-          <Image src={Logo} height={24} width={105} />
+          <Image alt="logo-white" src={Logo} height={24} width={105} />
         </div>
         {/* Socials */}
         <div className="flex mt-[42px]">{renderSocials()}</div>

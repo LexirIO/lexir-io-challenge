@@ -20,6 +20,7 @@ function ProductDescription({ product }: Props) {
       <div className="flex justify-between mb-4 text-base font-bold leading-5 uppercase">
         <div className="flex items-center">
           <Image
+            alt="flag"
             src={require(`../public/assets/${product.flag}.svg`)}
             width={18}
             height={20}

@@ -24,7 +24,7 @@ function Breadcrumbs({ url }: Props) {
             <a>{text}</a>
           </Link>
         </div>
-        {!isLast ? <Image src={ArrowRightIcon} height={14} width={8} /> : ""}
+        {!isLast ? <Image alt="arrow-right" src={ArrowRightIcon} height={14} width={8} /> : ""}
       </li>
     );
   });
@@ -33,7 +33,7 @@ function Breadcrumbs({ url }: Props) {
     <div className="flex items-end w-screen h-breadcrumbs">
       <div className="flex justify-start w-full max-w-[1210px] mx-auto">
         <div className="flex">
-          <Image src={HouseIcon} height={23} width={21} />
+          <Image alt="house" src={HouseIcon} height={23} width={21} />
           <ul className="flex">{renderedBreadcrumbs}</ul>
         </div>
       </div>

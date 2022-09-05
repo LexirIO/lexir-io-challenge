@@ -18,7 +18,11 @@ function NavMenu() {
   const renderedMenuItems = menuItemsConfig.map(item => {
     return (
       <li key={item.text} className="flex">
-        {item.icon ? <Image src={item.icon} height={21} width={21} /> : ""}
+        {item.icon ? (
+          <Image alt="link" src={item.icon} height={21} width={21} />
+        ) : (
+          ""
+        )}
         <Link href={item.url}>
           <a className={item.icon ? "ml-[9px]" : ""}>{item.text}</a>
         </Link>

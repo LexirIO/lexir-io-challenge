@@ -31,7 +31,9 @@ function TastingNotes({ intensity, smell, taste, use, useIcons }: Props) {
           className={`${isFirst && "ml-8"} uppercase flex items-center `}
         >
           <p className={`${!isLast ? "mx-2" : "ml-2"}`}>{text}</p>
-          {!isLast && <Image src={BulletPoint} height={4} width={4} />}
+          {!isLast && (
+            <Image alt="bullet-point" src={BulletPoint} height={4} width={4} />
+          )}
         </div>
       );
     });
@@ -45,9 +47,9 @@ function TastingNotes({ intensity, smell, taste, use, useIcons }: Props) {
       rendered.push(
         <div key={i} className="flex mr-0.5">
           {i < intensity ? (
-            <Image src={BoldDash} width={72} height={5} />
+            <Image alt="dash" src={BoldDash} width={72} height={5} />
           ) : (
-            <Image src={Dash} width={72} height={5} />
+            <Image alt="dash" src={Dash} width={72} height={5} />
           )}
         </div>
       );
@@ -68,6 +70,7 @@ function TastingNotes({ intensity, smell, taste, use, useIcons }: Props) {
         >
           <p className="text-xs mr-2.5">{text}</p>
           <Image
+            alt="use-icons"
             src={require(`../public/assets/${useIconsArr[i]}.svg`)}
             height={12}
             width={12}
@@ -84,12 +87,12 @@ function TastingNotes({ intensity, smell, taste, use, useIcons }: Props) {
       <h5 className={headingClasses}>Tasting Notes</h5>
       {/* Aroma */}
       <div className={noteRowClasses}>
-        <Image src={NoseIcon} width={21} height={26} />
+        <Image alt="nose" src={NoseIcon} width={21} height={26} />
         <div className="flex">{renderNotes(smell)}</div>
       </div>
       {/* Taste */}
       <div className={noteRowClasses}>
-        <Image src={TongueIcon} width={21} height={21} />
+        <Image alt="tongue" src={TongueIcon} width={21} height={21} />
         <div className="flex">{renderNotes(taste)}</div>
       </div>
       {/* Intensity bar */}

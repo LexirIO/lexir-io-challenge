@@ -7,7 +7,11 @@ interface Props {
 function Packshot({ packshot }: Props) {
   return (
     <div className="flex items-center justify-center border rounded-md bg-secondary border-borderSecondary h-packshot w-packshot">
-      <Image priority src={require(`../public/assets/${packshot}.svg`)} />
+      <Image
+        alt="packshot"
+        priority
+        src={require(`../public/assets/${packshot}.svg`)}
+      />
     </div>
   );
 }

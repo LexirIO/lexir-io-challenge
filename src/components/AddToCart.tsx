@@ -40,7 +40,7 @@ function AddToCart({ volume, price }: Props) {
               }
             }}
           >
-            <Image src={MinusIcon} width={16} height={4} />
+            <Image alt="minus" src={MinusIcon} width={16} height={4} />
           </button>
           <div className="flex items-center justify-center basis-1/3 h-[32px] border-x border-addToCartBorder">
             {amount}
@@ -51,7 +51,7 @@ function AddToCart({ volume, price }: Props) {
               setAmount(amount + 1);
             }}
           >
-            <Image src={PlusIcon} height={16} />
+            <Image alt="plus" src={PlusIcon} height={16} />
           </button>
         </div>
       </div>
