@@ -1,25 +1,34 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import type { ReactElement } from 'react';
+import type { NextPageWithLayout } from './_app';
 
-export default function Home() {
+
+const Page: NextPageWithLayout = () => {
+    const titleName = "Lexir Frontend Assessment!";
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Lexir Frontend Assessment!</title>
+        <title>{titleName}</title>
         <meta name="description" content="Lexir Frontend Assessment!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Lexir Frontend Assessment!</a>
-        </h1>
+      <main>
 
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
       </main>
     </div>
   );
 }
+
+Page.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <div>
+    {page}   
+    </div>
+  )
+}
+
+export default Page;
+
+
+  

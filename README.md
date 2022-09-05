@@ -1,5 +1,7 @@
 # Lexir | Frontend Developer Challenge
 
+## [Vercel](https://lexir-io-challenge-filipe-martins.vercel.app/) 
+
 THIS IS A SIMPLE EXERCISE, WHICH IS PART OF A RECRUITING PROCESS OF LEXIR AND AS SUCH, IT SHOULD NOT BE SHARED, DISTRIBUTED OR EXPOSED ANYWHERE WITHOUT CONSENT OF LEXIR. DOING SO, WILL AUTOMATICALLY DISQUALIFY YOU FROM THE PROCESS.
 
 All the provided data (namely: product names, images and prices) is not to be taken as real and is only relevant as example / "dummy" data for use in this exercise.
