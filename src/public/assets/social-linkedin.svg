@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141 140" width="141" height="140">
+	<title>New Project</title>
+	<defs>
+		<image  width="141" height="141" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAACNAQMAAACwkGvmAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAABlJREFUeJztwTEBAAAAwqD1T20KP6AAAOBuCncAAZI7NfsAAAAASUVORK5CYII="/>
+		<image  width="141" height="141" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAACNCAMAAAC9gAmXAAAAAXNSR0IB2cksfwAAAFFQTFRFLS0tR0dHfHx8o6Ojvr6+19fX5eXl////8vLyysrKiYmJYWFhYmJiOjo6lpaW2NjYsLCwVVVVy8vLbm5ulZWVb29vVFRUvb29e3t7iIiI5OTkEKYTRwAABClJREFUeJztnNty4yAMhn1IXHzAyzap4+b9H3TtOkkxSIJ0A6Iz/Jctg79ggYQQLopfobKqD8fm7dUSTVt3/XMoQ/16jh3ToSo9UeT4JyjKTeqvF4uIwbKqdY5PFY1llSJ5yveYLIuaCocZog7MphqD6eKzLDrCb2tkgVneFoTDBQPi8MEsONKAOTHCLCuPMbUZZpOu/cwK65Y8pDtSTqPZpJlOyc2y6PygUdwoi0SZ0NB8G3IKQ7MMjkxoaO6WU3Fj3CS+aGLHNKj6hF7U9qo+uCEeWr1VzQ3xLZmQ2by9TUXB7L11VYXkRtA0FhM3giZVDNwImi5J0bQOmrY7TWU5dJcEaGotIIvh6CkasU/6zOGXAoJGmHuu8LOPoPm0NoCffDRXC6Yormw0HUATOomB00B5y9ChEE4DZlXYaCAYPpq0xgaym9ArDk5zBmhC73VwGgHQhM6xE2uxveAE3wZSfmoyYMrgKSfKhzd7nCF8/ouOb7RjgIk7vvn6f3fq+76q42y6XDRxlWlwZRpcmQZXpsHlQSM8/FOD7kNF84R7c9Goft2KTzPhGcR5bSMH05GJxatsfk4Oo99OjKbRDvNPWH/fmYNd4qDt9qeDw/F/aXbBqISHZ9bbPI65ric7cPTIKlA0RmQsoV8379vcdurKPDXdxs75ugiao9Wb/eOsUP4C/tUXh6DxOKS+WmMgBQ7jPsvFaVqgM7MN8NwaTG7cNf+UZgY6M5cOM45fNMCb1LvoGBKnAZ5k9gVtuaSiYBxZDpwGmhYGTQM9z1EhRgb7z+UofGgcIpf+6DSk5cSnobJ18WkoO45PQxWQBKKR1TiOJ9BbUbMqCM29Tq8BfQRhOCFotNABwiHmeACanZkCayFhxgFodlYK+F4isfp6GqM/wJLxSfV6GuOwH6gDxXOZr6cx2ozOFkFpjPcABBgxaYxgk5nG6CbTZJpMk2kyTabJNJkm02SaX03z07xfGBoo0Wrsy8CcqNHNxdmLFw2wSbRKkQFiszuAGIV5LpduVbwAVXhWrsjKUhBV+cQ5g52+trbztuFIq41lOERSlKCxBgdISlmDA1zEMgaHKilqieSOkZiaoAMU41FQFm1/45A8hlFUlfwOZ4LTLp0LZsHRkOnbsiN5g0CrBkJvRrf3Q0P5gVqEuvEMjjKezlGotvVTjtQxsmgPSqkj+atF62qxqnffPGnww+5XS6ZzfWo7SU3nskftWI7iqsfnZXxtx7MykVtCt+UtjRuS94ggjRKch3uNc8vFoce6z307fJV2Q5z/RvZV9/Q+tTpBtSuU4H5XRizlqP4ILKvWh9N0ril9kAKA4cMBYbhwkK+qEEV9AQXXv20TPXasI+z7dLrmqMPj/HJSGc96Wp/vbpVdlPHxYvnSoMICCbOo1aVprt/d+7Hn1RxV12Mo/wDdlbh5GZ6PdAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="-1"/>
+	<use id="Layer 1" href="#img2" x="0" y="-1"/>
+</svg>
