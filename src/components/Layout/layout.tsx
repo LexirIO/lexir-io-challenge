@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import UserAvatar from "src/components/UserAvatar";
-import MyPic from "src/public/MyPic.jpg";
+import Leandro from "src/public/Leandro.png";
 import Routes from "src/components/DashboardRoutes";
 import {
   Card,
@@ -91,9 +91,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               />
             </Link>
             <UserAvatar
-              image={MyPic}
-              name="Bernardo Alves"
-              company="Lexir"
+              image={Leandro}
+              name="Leandro Alves"
+              company="Company Name"
               className="rounded-full"
               width="66px"
               height="66px"
