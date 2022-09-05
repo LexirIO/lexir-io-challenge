@@ -1,8 +1,14 @@
 
 export default function Footer() {
+  const footerInfo = {
+    titles: ["Lexir" "Community", "Platform", "Company", "Lexir Shop", "Socials"],
+    
+
+  };
   return (
-    <footer className="relative lg:relative inset-x-0 bottom-0">
-     <div className="flex flex-col flex-none order-none flex-grow-0 items-start py-5 px-6 gap-2 bg-primary-700">s</div>
+    <footer className="relative grid grid-rows-2 lg:relative inset-x-0 bottom-0">
+      <div className="grid grid-cols-6">s</div>
+      <div className="grid grid-cols-6"></div>
     </footer>
   );
 }

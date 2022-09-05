@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Layout from "../components/layout";
 import type { ReactElement } from 'react';
 import type { NextPageWithLayout } from './_app';
 
@@ -23,9 +22,9 @@ const Page: NextPageWithLayout = () => {
 
 Page.getLayout = function getLayout(page: ReactElement) {
   return (
-    <Layout>
-      {page}      
-    </Layout>
+    <div>
+    {page}   
+    </div>
   )
 }
 
