@@ -40,17 +40,17 @@ export default function ProductDetails({isDesktop}: Props) {
         <div className="flex items-center">
           <Image src={nose} alt="nose" />
           <span className="ml-10">ASTRIENGENT</span>
-          <div className="w-1 h-1 bg-dots rounded mx-2" />
+          <div className="w-1 h-1 bg-lightGray2 rounded mx-2" />
           <span>FRUITY</span>
-          <div className="w-1 h-1 bg-dots rounded mx-2" />
+          <div className="w-1 h-1 bg-lightGray2 rounded mx-2" />
           <span>COMPLEX</span>
         </div>
         <div className="flex items-center">
           <Image src={tongue} alt="nose" />
           <span className="ml-10">BITTER</span>
-          <div className="w-1 h-1 bg-dots rounded mx-2" />
+          <div className="w-1 h-1 bg-lightGray2 rounded mx-2" />
           <span>FLAMBOYANT</span>
-          <div className="w-1 h-1 bg-dots rounded mx-2" />
+          <div className="w-1 h-1 bg-lightGray2 rounded mx-2" />
           <span>BRIGHT</span>
         </div>
         <h3 className="font-bold text-base leading-5">Flavour Intensity</h3>
