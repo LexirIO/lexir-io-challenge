@@ -18,7 +18,7 @@ To run the code in dev environment:
   yarn run dev
 ```
 
-or [visit the page deployed on Vercel](https://github.com/Fanourios-Chatziathanasiou)
+or [visit the page deployed on Vercel](https://lexir-io-challenge-livid.vercel.app/)
 
 ---
 
