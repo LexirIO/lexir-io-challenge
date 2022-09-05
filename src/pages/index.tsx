@@ -1,25 +1,10 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import FixedLayout from "@components/FixedLayout";
+import ProductPage from "./ProductPage";
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Lexir Frontend Assessment!</title>
-        <meta name="description" content="Lexir Frontend Assessment!" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+const Home: React.FC<any> = () => (
+  <FixedLayout title="Lampant - Idea and Innovation Management Platform for Communities">
+    <ProductPage />
+  </FixedLayout>
+);
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Lexir Frontend Assessment!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-      </main>
-    </div>
-  );
-}
+export default Home;
