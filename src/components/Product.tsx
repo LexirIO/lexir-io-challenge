@@ -43,9 +43,14 @@ export default function Product({isDesktop, handleChart}: Props) {
   };
 
   return (
-    <section className={cn("max-w-7xl mx-auto px-8 py-10 grid gap-20", {'grid-cols-twoToOne': isDesktop, 'grid-rows-2': !isDesktop})}>
-      <Image src={product} alt="kiss my rhubarb" className={cn("object-contain absolute z-0", {'row-start-2': !isDesktop})} />
-
+    <section className={cn("max-w-7xl mx-auto px-8 py-10 grid gap-20",
+      {'grid-cols-twoToOne': isDesktop, 'grid-rows-2': !isDesktop})}
+    >
+      <Image 
+        src={product}
+        alt="kiss my rhubarb"
+        className={cn("object-contain absolute z-0", {'row-start-2': !isDesktop})}
+      />
       <article className={cn({'row-start-1': !isDesktop})}>
         <h1 className="font-sourceSerif text-5xl leading-tight">
           Kiss My Rhubarb
@@ -81,7 +86,8 @@ export default function Product({isDesktop, handleChart}: Props) {
             <button 
               type='button' 
               onClick={decreaseCount}
-              className="flex items-center p-1 border-r"
+              className="flex items-center p-1 border-r
+              transition-transform duration-500 hover:scale-105"
             >
               <Image src={minus} alt="minus image" />
             </button>
@@ -91,7 +97,8 @@ export default function Product({isDesktop, handleChart}: Props) {
             <button 
               type='button' 
               onClick={() => setProductCount(productCount + 1)}
-              className="flex items-center p-1 border-l"
+              className="flex items-center p-1 border-l
+                transition-transform duration-500 hover:scale-105"
             >
               <Image src={plus} alt="plus image" />
             </button>
@@ -100,7 +107,9 @@ export default function Product({isDesktop, handleChart}: Props) {
 
         <button 
             type='button'
-            className="flex justify-between items-center px-10 py-3 w-full mt-3 bg-primary"
+            className="flex justify-between items-center
+              px-10 py-3 w-full mt-3 bg-primary
+              transition-color duration-500 hover:bg-fadeGray"
             onClick={chartAction}
           >
             <p className="text-white font-regular" >Add to Cart</p>
