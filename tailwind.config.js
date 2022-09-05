@@ -12,7 +12,9 @@ module.exports = {
       },
       colors: {
         'light-black': '#2D2D2D',
-        'light-grey': '#F9F9F9'
+        'light-grey': '#F9F9F9',
+        'primary': '#6B6B6B',
+        'success': '#1C8C64'
       }
     },
   },
