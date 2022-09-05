@@ -27,3 +27,5 @@ There are some details that have to be taken into account, and I am pretty happy
 6. The figma design seems to be some pixels off here and there, like the avatar having a left margin of 63px and the list below 64px. Not very relevant, but I'll assume that the website doesn't have to be exactly pixel perfect.
 
 7. /Components folder should be at root level. Some people use it on /pages and this drastically increases build time.
+
+8. Vercel link: https://lexir-io-challenge-bay.vercel.app/
