@@ -1,3 +1,4 @@
+import { useIsDesktop } from "@components/context/DesktopWidthProvider";
 import Destination from "@components/Destination";
 import Footer from "@components/Footer/Footer";
 import NavBar from "@components/NavBar";
@@ -5,32 +6,15 @@ import Product from "@components/Product";
 import ProductDetails from "@components/ProductDetails";
 import SuggestBrand from "@components/SuggestBrand";
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
-  const [isDesktop, setDesktop] = useState(true);
   const [isChartFull, setIsChartFull] = useState(false);
-
-  // useEffect is used just to avoid window is not defined error on Next.js
-  useEffect(
-    () => {
-      setDesktop(window.innerWidth >= 768);
-    },
-    [],
-  );
-
-  const updateMedia = () => {
-    setDesktop(window.innerWidth >= 768);
-  };
+  const { isDesktop } = useIsDesktop();
 
   const handleChart = (value: boolean) => {
     setIsChartFull(value);
   }; 
-
-  useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
-  });
 
   return (
     <div className="bg-white">
@@ -42,12 +26,12 @@ export default function Home() {
 
       <main className="bg-white">
         <header>
-          <NavBar isDesktop={isDesktop} isChartFull={isChartFull} />
+          <NavBar isChartFull={isChartFull} />
           <Destination />
         </header>
-        <Product isDesktop={isDesktop} handleChart={handleChart} />
-        <ProductDetails isDesktop={isDesktop} />
-        <SuggestBrand isDesktop={isDesktop} />
+        <Product handleChart={handleChart} />
+        <ProductDetails />
+        <SuggestBrand />
         <Footer />
       </main>
     </div>

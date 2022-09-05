@@ -1,12 +1,11 @@
 import Image from 'next/image';
 import cn from 'classnames';
 import bottles from '../assets/images/bottles.png';
+import { useIsDesktop } from './context/DesktopWidthProvider';
 
-type Props = {
-  isDesktop: boolean;
-};
+export default function SuggestBrand() {
+  const {isDesktop} = useIsDesktop();
 
-export default function SuggestBrand({isDesktop}: Props) {
   return (
     <section className={cn("max-w-7xl mx-auto px-8 pt-10 grid gap-4",
       {'grid-cols-2': isDesktop})}

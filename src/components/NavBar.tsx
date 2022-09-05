@@ -5,13 +5,15 @@ import signInIcon from '../assets/images/signIn-icon.svg';
 import chartIcon from '../assets/images/chart-icon.svg';
 import Menu from './Menu';
 import cn from 'classnames';
+import { useIsDesktop } from './context/DesktopWidthProvider';
 
 type Props = {
-  isDesktop: boolean;
   isChartFull: boolean;
 }
 
-export default function NavBar({isDesktop, isChartFull}: Props) {
+export default function NavBar({isChartFull}: Props) {
+  const { isDesktop } = useIsDesktop();
+
   return (
     <nav className="sticky max-w-7xl mx-auto flex justify-between py-10 px-8 z-1 shadow-navbarShadow">
       <Link href="/">

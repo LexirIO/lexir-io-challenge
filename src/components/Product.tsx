@@ -5,14 +5,15 @@ import plus from '../assets/images/plus.svg';
 import minus from '../assets/images/minus.svg';
 import cn from 'classnames';
 import { useEffect, useState } from 'react';
+import { useIsDesktop } from './context/DesktopWidthProvider';
 
 type Props = {
-  isDesktop: boolean;
   handleChart: (value: boolean) => void;
 };
 
-export default function Product({isDesktop, handleChart}: Props) {
+export default function Product({handleChart}: Props) {
   const [productCount, setProductCount] = useState(2);
+  const { isDesktop } = useIsDesktop();
 
   const oneBottle = 115.165;
   const [amount, setAmount] = useState(

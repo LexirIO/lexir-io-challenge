@@ -4,12 +4,11 @@ import tongue from '../assets/images/tongue.svg';
 import nose from '../assets/images/nose.svg';
 import cocktail from '../assets/images/cocktail.svg';
 import party from '../assets/images/party.svg';
+import { useIsDesktop } from './context/DesktopWidthProvider';
 
-type Props = {
-  isDesktop: boolean;
-};
+export default function ProductDetails() {
+  const { isDesktop } = useIsDesktop();
 
-export default function ProductDetails({isDesktop}: Props) {
   return (
     <section className={cn("max-w-7xl mx-auto px-8 py-10 grid gap-20", {'grid-cols-twoToOne': isDesktop})}>
       <article className="flex flex-col gap-8">
