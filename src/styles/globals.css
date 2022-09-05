@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -23,4 +27,30 @@ a {
     color: white;
     background: black;
   }
+}
+
+.footer-bg-color {
+  background: #2d2d2d;
+}
+
+.footer-navigation-text-color {
+  color: #8f8f8f;
+}
+
+.flag-blue {
+  width: 6px;
+  height: 12px;
+  background-color: rgba(69, 90, 100, 1);
+}
+
+.flag-yellow {
+  width: 6px;
+  height: 12px;
+  background-color: rgba(255, 193, 7, 1);
+}
+
+.flag-red {
+  width: 6px;
+  height: 12px;
+  background-color: rgba(255, 61, 0, 1);
 }
