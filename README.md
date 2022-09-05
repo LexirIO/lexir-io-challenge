@@ -30,7 +30,7 @@ Once you have node.js installed, open up your OS's Terminal/Bash application, ch
 
 After all NPM packages installed successfully, the css pre-compile and serve processes will automatically be triggered (you can do that manually by running `yarn run dev`).
 
-- Whenever a change is detected in files inside the `/src` folder it will re-run the above related scripts and reload the page in the browser.
+-   Whenever a change is detected in files inside the `/src` folder it will re-run the above related scripts and reload the page in the browser.
 
 At this point you should be able to see a blank page in your browser.
 
@@ -46,16 +46,16 @@ If you experience problems during the setup please _STOP_ and send a message to 
 
 ### Browsers it should work in and display correctly
 
-- Latest Chrome
+-   Latest Chrome
 
 ### Where should I place my files?
 
 We've got an initial folder and file structure in `src` prepared for you:
 
-- `pages/index.tsx` - File with prepared markup (needs your improvements)
-- `styles/` - inside this folder you can add styles, classes, mixins, variables, etc that will help you to implement the required design as fast as possible.
-- `components/` - inside this folder you should add all the JavaScript components needed to make your solution work as it should.
-- `assets/` - images and other assets to be used by this solution.
+-   `pages/index.tsx` - File with prepared markup (needs your improvements)
+-   `styles/` - inside this folder you can add styles, classes, mixins, variables, etc that will help you to implement the required design as fast as possible.
+-   `components/` - inside this folder you should add all the JavaScript components needed to make your solution work as it should.
+-   `assets/` - images and other assets to be used by this solution.
 
 Please keep and use this structure.
 
@@ -63,20 +63,20 @@ Please keep and use this structure.
 
 1.  HTML
 
-    - Make sure to add all needed HTML so that it fits the exercise requirements.
-    - Please use semantically correct HTML5 markup
+    -   Make sure to add all needed HTML so that it fits the exercise requirements.
+    -   Please use semantically correct HTML5 markup
 
 2.  JavaScript
 
-    - Please use Typescript, ReactJS is allowed
-    - We would like to see YOUR clean and modular JavaScript / Typescript code (while commented when needed).
-    - Use of recent JavaScript / Typescript features (eg: ES6, ES2016, ES2017) is highly encouraged as long as supported by latest chrome (so you shouldn't have to transpile / compile your JavaScript).
+    -   Please use Typescript, ReactJS is allowed
+    -   We would like to see YOUR clean and modular JavaScript / Typescript code (while commented when needed).
+    -   Use of recent JavaScript / Typescript features (eg: ES6, ES2016, ES2017) is highly encouraged as long as supported by latest chrome (so you shouldn't have to transpile / compile your JavaScript).
 
 3.  CSS
 
-    - We kindly ask you to use TAILWIND CSS
-    - Another frameworks are not allowed
-    - Only Pure CSS are not allowed
+    -   We kindly ask you to use TAILWIND CSS
+    -   Another frameworks are not allowed
+    -   Only Pure CSS are not allowed
 
 ### Can I use additional NPM packages?
 
@@ -89,14 +89,14 @@ Yes, as long as the points from the above section [Coding guidelines] are not vi
 1. Fork this repo
 2. Design to be developed: https://www.figma.com/file/G1uRC23QIVkKzLOif8MqHf/Tech-Assessment-V1.0.2
 3. Tailwind Implementation
-   - Please add to the existing project the Tailwind CSS framework to achieve the required design and planned behavior.
+    - Please add to the existing project the Tailwind CSS framework to achieve the required design and planned behavior.
 4. HTML markup
 
-   - Please add to the existing src/index.tsx file the semantic markup needed to achieve the required design and planned behavior.
-   - Depending on your implementation (regarding modularization/componentization) you may chose to have some components. If that's case (which is fine) we would still like you to add at least the base structural elements (eg: header, footer, etc) in the base index.tsx file and respective calls
+    - Please add to the existing src/index.tsx file the semantic markup needed to achieve the required design and planned behavior.
+    - Depending on your implementation (regarding modularization/componentization) you may chose to have some components. If that's case (which is fine) we would still like you to add at least the base structural elements (eg: header, footer, etc) in the base index.tsx file and respective calls
 
 5. App's dynamic behavior - please add the required Javascript / Typescript and styles so that:
-   - No required for Junior Developer
+    - No required for Junior Developer
 6. Pull Request to the main repository, deploy to vercel and share the link
 
 ### BONUS (Optional for Frontend Heroes)
@@ -104,8 +104,8 @@ Yes, as long as the points from the above section [Coding guidelines] are not vi
 7.  Leave an empty file named "I AM A FRONTEND HERO" in the root folder.
 8.  App's dynamic behavior
 
-- Create a API call inside of the folder pages/api to get all products
-- Consume and handle data from the API using SSE
+-   Create a API call inside of the folder pages/api to get all products
+-   Consume and handle data from the API using SSE
 
 9. Pull Request to the main repository, deploy to vercel and share the link
 

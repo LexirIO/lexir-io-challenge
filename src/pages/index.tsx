@@ -1,25 +1,15 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Navbar from "../components/Navbar";
+import ProductDescription from "../components/ProductDescription";
+import BrandSuggestion from "../components/BrandSuggest";
+import ProductDetails from "../components/ProductDetails";
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Lexir Frontend Assessment!</title>
-        <meta name="description" content="Lexir Frontend Assessment!" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Lexir Frontend Assessment!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-      </main>
-    </div>
-  );
+    return (
+        <div className=" flex ml-[40px] flex-col justify-center max-w-[1280px]">
+            <Navbar />
+            <ProductDescription />
+            <ProductDetails />
+            <BrandSuggestion />
+        </div>
+    );
 }
