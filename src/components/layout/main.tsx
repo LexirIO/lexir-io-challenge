@@ -5,8 +5,8 @@ interface Props {
     children: ReactNode;
 }
 
-const Main: NextPage<Props> = ({ children }) => {
-    return <section className="p-8">{children}</section>;
+const Section: NextPage<Props> = ({ children }) => {
+    return <section className="p-8 pb-0">{children}</section>;
 };
 
-export default Main;
+export default Section;

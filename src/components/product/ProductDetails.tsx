@@ -8,7 +8,7 @@ const ProductDetails = () => {
             <div className="w-[90%] flex justify-center bg-[#F9F9F9] rounded-md border border-[#E7E7E7] p-8"><Image src={Bottle} alt="brand-logo" /></div>
             <div className="w-[90%] mt-20">
                 <h3 className="font-bold text-2xl mb-6">Product Details</h3>
-                <p className="w-[85%] mb-8">
+                <p className="mb-8 product-text">
                     Kiss My Rhubarb takes its origins from an old handwritten
                     recipe from co-creators Niels’ and Wouters’ rebellious
                     grandparents. Using carefully hand-selected stalks of
@@ -16,7 +16,7 @@ const ProductDetails = () => {
                     aperitif perfectly expresses the brimming liveliness that
                     characterizes the Belgian countryside in bloom.
                 </p>
-                <p className="w-[85%]">
+                <p className="product-text">
                     Kiss My Rhubarb is created in collaboration with local
                     producers in Izegem that select only the freshest stalks of
                     rhubarb using attentive and sustainable practices. By

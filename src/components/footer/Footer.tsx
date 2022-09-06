@@ -17,15 +17,15 @@ const Footer = () => {
                         COMMUNITY
                     </h3>
                     <Link href="/brands">
-                        <a className="font-medium text-white leading-8 pb-3">Lexir for Brands</a>
+                        <a className="footer-link">Lexir for Brands</a>
                     </Link>
                     <Link
                         href="/business"
                     >
-                        <a className="font-medium text-white leading-8 pb-3">Business Buyers</a>
+                        <a className="footer-link">Business Buyers</a>
                     </Link>
                     <Link href="/sales">
-                        <a className="font-medium text-white leading-8 pb-3">Sales Affiliates</a>
+                        <a className="footer-link">Sales Affiliates</a>
                     </Link>
                 </div>
                 <div className="flex flex-col">
@@ -35,13 +35,13 @@ const Footer = () => {
                     <Link
                         href="/resources"
                     >
-                        <a className="font-medium text-white leading-8 pb-3">Resources</a>
+                        <a className="footer-link">Resources</a>
                     </Link>
                     <Link href="/pricing">
-                        <a className="font-medium text-white leading-8 pb-3">Pricing</a>
+                        <a className="footer-link">Pricing</a>
                     </Link>
                     <Link href="/signup">
-                        <a className="font-medium text-white leading-8 pb-3">Get Started</a>
+                        <a className="footer-link">Get Started</a>
                     </Link>
                 </div>
                 <div className="flex flex-col">
@@ -49,13 +49,13 @@ const Footer = () => {
                         Company
                     </h3>
                     <Link href="/about">
-                        <a className="font-medium text-white leading-8 pb-3">About</a>
+                        <a className="footer-link">About</a>
                     </Link>
                     <Link href="/contact">
-                        <a className="font-medium text-white leading-8 pb-3">Contact</a>
+                        <a className="footer-link">Contact</a>
                     </Link>
                     <Link href="/legal">
-                        <a className="font-medium text-white leading-8 pb-3">Legal</a>
+                        <a className="footer-link">Legal</a>
                     </Link>
                 </div>
                 <div className="flex flex-col">
@@ -63,16 +63,16 @@ const Footer = () => {
                         Lexir Shop
                     </h3>
                     <Link href="/brands">
-                        <a className="font-medium text-white leading-8 pb-3">Brands</a>
+                        <a className="footer-link">Brands</a>
                     </Link>
                     <Link href="/spirits">
-                        <a className="font-medium text-white leading-8 pb-3">Spirits</a>
+                        <a className="footer-link">Spirits</a>
                     </Link>
                     <Link href="/wine">
-                        <a className="font-medium text-white leading-8 pb-3">Wine</a>
+                        <a className="footer-link">Wine</a>
                     </Link>
                     <Link href="/blog">
-                        <a className="font-medium text-white leading-8 pb-3">Blog</a>
+                        <a className="footer-link">Blog</a>
                     </Link>
                 </div>
                 <div className="flex justify-between w-[150px]">
@@ -83,10 +83,10 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex justify-between border-t pt-4 border-[#8F8F8F]">
-                <p>© 2022 Lexir Inc.</p>
+                <p className="font-light">© 2022 Lexir Inc.</p>
                 <div className="flex justify-between w-[200px]">
-                    <p>Privacy</p>
-                    <p>Terms of service</p>
+                    <p className="font-medium">Privacy</p>
+                    <p className="font-medium">Terms of service</p>
                 </div>
             </div>
         </footer>

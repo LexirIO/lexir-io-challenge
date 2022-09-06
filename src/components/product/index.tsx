@@ -5,9 +5,9 @@ import Cart from "@components/cart/Cart";
 
 const Product = () => {
     return (
-        <section className="flex">
+        <section className="flex mt-8">
             <ProductDetails />
-            <div className="flex flex-col">
+            <div className="flex flex-col w-[80%]">
                 <Cart />
                 <ProductDescription />
             </div>
