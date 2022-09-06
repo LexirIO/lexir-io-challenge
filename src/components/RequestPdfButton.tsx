@@ -1,5 +1,5 @@
 export const RequestPdfButton = () => (
-    <button className="bg-green-900 text-white pacifico hover:bg-green-700 py-1 px-2 rounded transition ease-in-out">
+    <button className="text-white hover:bg-gray-900 py-1 px-6 rounded transition ease-in-out">
         Request PDF
     </button>
 );

@@ -4,9 +4,9 @@ type ProfileElementProps = {
 };
 
 export const ProfileElement = ({ label, icon }: ProfileElementProps) => (
-    <li className="py-2 hover:bg-green-200 rounded transition ease-in-out">
-        <a href="#" className="flex">
-            <div className="icon text-green-900">{icon}</div>
+    <li className="py-4 rounded transition ease-in-out">
+        <a href="#" className="flex flex-row items-center">
+            <div className="w-10 text-xl">{icon}</div>
             <p>{label}</p>
         </a>
     </li>

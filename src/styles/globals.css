@@ -2,15 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Serif+Pro:wght@700&display=swap');
+
+:root {
+    --dark: #2d2d2d;
+    --clear: #f9f9f9;
+    --company: #e0e0e0;
+}
 
 html,
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    background: var(--clear);
+    color: var(--dark);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     height: 100%;
 }
 
@@ -19,24 +26,26 @@ a {
     text-decoration: none;
 }
 
+button {
+    background: var(--dark);
+}
+
+li:hover {
+    background: var(--clear);
+}
+
 * {
     box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-    html {
-        color-scheme: dark;
-    }
-    body {
-        color: white;
-        background: black;
-    }
+.ss-pro {
+    font-family: 'Source Serif Pro', serif;
 }
 
-.pacifico {
-    font-family: 'Pacifico', cursive;
+.outside-line {
+    border: 1px solid var(--company);
 }
 
-.icon {
-    width: 32px;
+.border-underline {
+    border-bottom: 1px solid var(--company);
 }

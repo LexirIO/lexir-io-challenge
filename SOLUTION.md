@@ -24,9 +24,7 @@ In the repo I forked the folders `/components` and `/assets` were not in it.
 
 # Other comments
 
-I decided to do the Billing profile page because I think it's one of the challenging pages (not the most difficult nor the easier).
-
-It's made for an invented online plants shop because I love plants 🪴 (In that way you'll know me a bit more).
+I decided to do the Billing profile page because I think it's one of the challenging pages.
 
 I think the tech stack you work with (and encourage us to do the challenge with) it's really modern and more user friendly than others out there.
 
