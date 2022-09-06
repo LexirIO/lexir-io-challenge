@@ -1,3 +1,22 @@
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
+
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/Fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face{
+  font-family: "Source Sans Pro";
+  src: url("../assets/Fonts/Source_Serif_Pro/SourceSerifPro-SemiBold.ttf");
+}
+
+@font-face{
+  font-family: "Source Sans Pro bold";
+  src: url("../assets/Fonts/Source_Serif_Pro/SourceSerifPro-Bold.ttf");
+}
+
 html,
 body {
   padding: 0;
@@ -13,6 +32,7 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: "Lato";
 }
 
 @media (prefers-color-scheme: dark) {
