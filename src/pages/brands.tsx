@@ -1,15 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from 'next/image';
 
 import Cottonbro from "../assets/pexels-cottonbro.png";
 
 import Navigation from "./navigation";
 import Brand from "@components/brand";
+import Button from "@components/button";
+
+import { BrandType } from "@components/brand";
 
 import { brandsCollection } from "brands-data";
 
 const Brands = () => {
-    const [brands, setBrands] = useState(brandsCollection);
+    const [brands, setBrands] = useState<BrandType[]>([]);
+
+    useEffect(() => {
+        setBrands(brandsCollection);
+    }, []);
 
     return (
         <>
@@ -21,11 +28,11 @@ const Brands = () => {
                 <main className="mt-10 grid grid-cols-3 gap-x-20 gap-y-5">
                     {
                         brands &&
-                            brands.map((brand) => {
-                                const {id, logo, title, subtitle, flag, place} = brand;
+                            brands.map((brand, idx) => {
+                                const {logo, title, subtitle, flag, place} = brand;
 
                                 return (
-                                    <div key={id} className="">      
+                                    <div key={idx} className="">      
                                         <Brand logo={logo} title={title} subtitle={subtitle} flag={flag} place={place} />
                                     </div>
                                 );
@@ -39,7 +46,7 @@ const Brands = () => {
                     </h2>
                     <p className="font-lato text-base font-normal">Lexir is always looking to connect with new exciting craft brands from around the world. If you have a brand in mind that you'd like to see on Lexir, let us know.</p>
                     <div className="mt-20">
-                        <button className="font-lato p-3 bg-light-black text-white font-medium text-base w-60 rounded">Suggest a Brand</button>
+                        <Button>Suggest a Brand</Button>
                     </div>
                 </div>
                 <div className="w-full h-full relative">

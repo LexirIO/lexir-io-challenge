@@ -3,7 +3,7 @@ import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 
 
-export interface BrandProps {
+export type BrandType = {
     logo: StaticImageData,
     title: string,
     subtitle: string,
@@ -11,7 +11,7 @@ export interface BrandProps {
     place: string
 }
 
-const Brand = ({logo, title, subtitle, flag, place}: BrandProps) => {
+const Brand = ({logo, title, subtitle, flag, place}: BrandType) => {
     return (
         <div className="w-96 h-28 bg-light-grey flex items-center">
             <div className='px-5'>

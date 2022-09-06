@@ -13,7 +13,6 @@ import BelgiumFlag from "./src/assets/belgium-flag.png";
 
 export const brandsCollection =[
     {
-        "id": 1,
         "logo": SiwuLogo,
         "title": "Siwu Distillet",
         "subtitle": "Aquavit & Gin",
@@ -21,7 +20,6 @@ export const brandsCollection =[
         "place": "Copehagen, Denmark"
     },
     {
-        "id": 2,
         "logo": ErikaLogo,
         "title": "Erika Spirits",
         "subtitle": "Vodka & Gin",
@@ -29,7 +27,6 @@ export const brandsCollection =[
         "place": "Cognac, France"
     },
     {
-        "id": 3,
         "logo": NineFoldLogo,
         "title": "Ninefold",
         "subtitle": "Rum",
@@ -37,7 +34,6 @@ export const brandsCollection =[
         "place": "D&G, Scotland"
     },
     {
-        "id": 4,
         "logo": ArgalaLogo,
         "title": "Argala",
         "subtitle": "Pastis, Bitters & Liqueurs",
@@ -45,7 +41,6 @@ export const brandsCollection =[
         "place": "Boves, Italy"
     },
     {
-        "id": 5,
         "logo": BaldoriaLogo,
         "title": "Baldoria",
         "subtitle": "Vermouth",
@@ -53,7 +48,6 @@ export const brandsCollection =[
         "place": "Boves, Italy"
     },
     {
-        "id": 6,
         "logo": KissMyLogo,
         "title": "Kiss My",
         "subtitle": "Aperitif",
