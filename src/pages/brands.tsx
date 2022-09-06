@@ -10,6 +10,7 @@ import Button from "@components/button";
 import { BrandType } from "@components/brand";
 
 import { brandsCollection } from "brands-data";
+import Footer from "@components/footer";
 
 const Brands = () => {
     const [brands, setBrands] = useState<BrandType[]>([]);
@@ -54,6 +55,8 @@ const Brands = () => {
                 </div>
             </section>
             </div>
+
+            <Footer />
         </>
     );
 }
