@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import type { StaticImageData } from 'next/image';
 
 import Image from 'next/image';
@@ -12,8 +14,20 @@ export type BrandType = {
 }
 
 const Brand = ({logo, title, subtitle, flag, place}: BrandType) => {
+    const [isSelected, setIsSelected] = useState(false);
+
+    const toggleIsSelected = () => setIsSelected(!isSelected);
+
+    const getBrandStyle = () => {
+        return isSelected ?
+            "w-96 h-28 bg-light-grey flex items-center cursor-pointer" :
+            "w-96 h-28 bg-white flex items-center border border-[#E7E7E7] rounded-md cursor-pointer"
+    }
+
+    const brandStyle = getBrandStyle();
+
     return (
-        <div className="w-96 h-28 bg-light-grey flex items-center">
+        <div className={brandStyle} onClick={toggleIsSelected}>
             <div className='px-5'>
                 <Image src={logo} alt={title} height={35} width={72}/>
             </div>
