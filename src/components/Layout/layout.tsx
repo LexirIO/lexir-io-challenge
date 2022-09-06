@@ -76,30 +76,25 @@ const routes: routes[] = [
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="w-screen h-full flex ">
-      <div className="flex relative h-full w-[30%]">
-        <div
-          id="ProfileSection"
-          className="items-center flex-shrink-0 h-screen xl:w-[22%]    "
-        >
-          <div className="flex flex-col fixed items-center p-[63px]">
-            <Link href="/">
-              <Image
-                width={145}
-                height={34}
-                className="hover:cursor-pointer"
-                src={LexirLogo}
-              />
-            </Link>
-            <UserAvatar
-              image={Leandro}
-              name="Leandro Alves"
-              company="Company Name"
-              className="rounded-full"
-              width="66px"
-              height="66px"
+      <div className="py-[60px] w-[37.5%] ">
+        <div className="flex flex-col items-center px-[30px] ">
+          <Link href="/">
+            <Image
+              width={145}
+              height={34}
+              className="hover:cursor-pointer "
+              src={LexirLogo}
             />
-            <Routes spacing="4" routes={routes} />
-          </div>
+          </Link>
+          <UserAvatar
+            image={Leandro}
+            name="Leandro Alves"
+            company="Company Name"
+            className="rounded-full"
+            width="66px"
+            height="66px"
+          />
+          <Routes spacing="4" routes={routes} />
         </div>
       </div>
       {children}
