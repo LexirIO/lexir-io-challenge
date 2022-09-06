@@ -16,22 +16,12 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 // COMPONENTS
-import { ProfileElement } from '../components/ProfileElement';
 import { BillingInformation } from '../components/BillingInformation';
 import { ProfileProjects } from '../components/ProfileProjects';
 import { PastInvoices } from '../components/PastInvoices';
 
 // PROFILE PICTURE
 import profilePic from '../assets/profile-pic.jpg';
-
-const tableColumns = <FontAwesomeIcon icon={faTableColumns} className="ml-1.5" />;
-const tags = <FontAwesomeIcon icon={faTags} className="ml-1.5" />;
-const boxesStacked = <FontAwesomeIcon icon={faBoxesStacked} className="ml-1.5" />;
-const peopleGroup = <FontAwesomeIcon icon={faPeopleGroup} className="ml-1.5" />;
-const receipt = <FontAwesomeIcon icon={faReceipt} className="ml-1.5" />;
-const moneyCheckDollar = <FontAwesomeIcon icon={faMoneyCheckDollar} className="ml-1.5" />;
-const screwdriverWrench = <FontAwesomeIcon icon={faScrewdriverWrench} className="ml-1.5" />;
-const rightFromBracket = <FontAwesomeIcon icon={faRightFromBracket} className="ml-1.5" />;
 
 const billingName = 'Jordi Ollé';
 const billingAddress = 'Av. Maria, 43460, Alcover, Tarragona';
@@ -94,14 +84,70 @@ export default function Home() {
                     </div>
                 </div>
                 <ul>
-                    <ProfileElement label="Dashboard" icon={tableColumns} />
-                    <ProfileElement label="Brands" icon={tags} />
-                    <ProfileElement label="Products" icon={boxesStacked} />
-                    <ProfileElement label="Customers" icon={peopleGroup} />
-                    <ProfileElement label="Orders" icon={receipt} />
-                    <ProfileElement label="Billing profile" icon={moneyCheckDollar} />
-                    <ProfileElement label="Account details" icon={screwdriverWrench} />
-                    <ProfileElement label="Logout" icon={rightFromBracket} />
+                    <li className="py-4 rounded transition ease-in-out">
+                        <a href="#" className="flex flex-row items-center">
+                            <div className="w-10 text-xl">
+                                <FontAwesomeIcon icon={faTableColumns} className="ml-1.5" />
+                            </div>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li className="py-4 rounded transition ease-in-out">
+                        <a href="#" className="flex flex-row items-center">
+                            <div className="w-10 text-xl">
+                                <FontAwesomeIcon icon={faTags} className="ml-1.5" />
+                            </div>
+                            <p>Brands</p>
+                        </a>
+                    </li>
+                    <li className="py-4 rounded transition ease-in-out">
+                        <a href="#" className="flex flex-row items-center">
+                            <div className="w-10 text-xl">
+                                <FontAwesomeIcon icon={faBoxesStacked} className="ml-1.5" />
+                            </div>
+                            <p>Products</p>
+                        </a>
+                    </li>
+                    <li className="py-4 rounded transition ease-in-out">
+                        <a href="#" className="flex flex-row items-center">
+                            <div className="w-10 text-xl">
+                                <FontAwesomeIcon icon={faPeopleGroup} className="ml-1.5" />
+                            </div>
+                            <p>Customers</p>
+                        </a>
+                    </li>
+                    <li className="py-4 rounded transition ease-in-out">
+                        <a href="#" className="flex flex-row items-center">
+                            <div className="w-10 text-xl">
+                                <FontAwesomeIcon icon={faReceipt} className="ml-1.5" />
+                            </div>
+                            <p>Orders</p>
+                        </a>
+                    </li>
+                    <li className="py-4 rounded transition ease-in-out">
+                        <a href="#" className="flex flex-row items-center">
+                            <div className="w-10 text-xl">
+                                <FontAwesomeIcon icon={faMoneyCheckDollar} className="ml-1.5" />
+                            </div>
+                            <p>Billing Profile</p>
+                        </a>
+                    </li>
+                    <li className="py-4 rounded transition ease-in-out">
+                        <a href="#" className="flex flex-row items-center">
+                            <div className="w-10 text-xl">
+                                <FontAwesomeIcon icon={faScrewdriverWrench} className="ml-1.5" />
+                            </div>
+                            <p>Accound Details</p>
+                        </a>
+                    </li>
+                    <li className="py-4 rounded transition ease-in-out">
+                        <a href="#" className="flex flex-row items-center">
+                            <div className="w-10 text-xl">
+                                <FontAwesomeIcon icon={faRightFromBracket} className="ml-1.5" />
+                            </div>
+                            <p>Logout</p>
+                        </a>
+                    </li>
                 </ul>
             </aside>
             <main className="p-14 w-full main-background-color">
