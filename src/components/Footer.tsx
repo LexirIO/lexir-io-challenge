@@ -10,7 +10,7 @@ export const Footer = ({ logo }: FooterProps) => {
   const Link = ({ label, icon }: LinkProps) => {
     return (
       icon ?
-        <li><a href="#" className=" m-4 lg:m-0"><Image src={icon} className=" w-5 h-5" /><span className="sr-only">{label}</span></a></li>
+        <li><a href="#" className=" m-4 lg:m-0"><Image src={icon} alt=" " className=" w-5 h-5" /><span className="sr-only">{label}</span></a></li>
         : <li><a href="#" className=" capitalize text-white">{label}</a></li>)
 
   }
@@ -19,7 +19,7 @@ export const Footer = ({ logo }: FooterProps) => {
     <div className=" bg-primary py-5 px-6 text-fontXS leading-8 font-medium ">
       <div className="lg:flex ">
         <div>
-          <Image src={logo} alt="" />
+          <Image src={logo} alt=" " />
         </div>
         <div className="md:flex md:justify-between  lg:w-5/6 lg:px-32" >
           <ul >

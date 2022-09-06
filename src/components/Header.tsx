@@ -26,7 +26,7 @@ export const Header = ({ logo, userIcon, cartIcon }: HeaderProps) => {
     return (
       icon ?
         <li ><a href="#" className="flex uppercase md:ml-10 ">
-          <Image src={icon} className=" w-5 h-5" />
+          <Image src={icon} alt=" " className=" w-5 h-5" />
           <span className=" ml-2">{label}</span>
         </a></li> :
         <li><a href="#" className=" uppercase md:ml-10">{label}</a></li>)
@@ -94,7 +94,7 @@ export const Header = ({ logo, userIcon, cartIcon }: HeaderProps) => {
 
     <div className="flex justify-between py-10 px-8 box-s md:border-b-2 border-b-shadow md:text-fontXXS text-fontS">
       <div>
-        <a href="#"><Image src={logo} alt="" /></a>
+        <a href="#"><Image src={logo} alt=" " /></a>
       </div>
       {screenSize < 768 ? <MobileHeader /> : <DesktopHeader />}
     </div>
