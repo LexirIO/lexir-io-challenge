@@ -45,7 +45,7 @@ const Brands = () => {
                     <h2 className="mb-4 font-serifpro font-bold text-5xl text-light-black">
                         Have a brand you’d like to see on <span className="text-success">Lexir</span>?
                     </h2>
-                    <p className="font-lato text-base font-normal">Lexir is always looking to connect with new exciting craft brands from around the world. If you have a brand in mind that you'd like to see on Lexir, let us know.</p>
+                    <p className="font-lato text-base font-normal">Lexir is always looking to connect with new exciting craft brands from around the world. If you have a brand in mind that you would like to see on Lexir, let us know.</p>
                     <div className="mt-20">
                         <Button>Suggest a Brand</Button>
                     </div>

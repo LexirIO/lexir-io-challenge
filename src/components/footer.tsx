@@ -15,7 +15,7 @@ type FooterSectionProps = {
 const FooterSection: React.FC<PropsWithChildren<FooterSectionProps>> = ({header, children}) => {
     return (
         <div className='flex flex-col gap-y-2'>
-            <h3 className='font-medium uppercase text-medium-grey'>{header}</h3>
+            <h3 className='font-medium uppercase text-medium-grey cursor-text'>{header}</h3>
             {children}
         </div>
     );
@@ -28,7 +28,7 @@ const Footer = () => {
                         <div>
                             <Image src={LogoWhite} alt='Logo' />
                         </div>
-                        <div className='flex items-start p-0 gap-20 leading-8'>
+                        <div className='flex items-start p-0 gap-20 leading-8 cursor-pointer'>
                             <FooterSection header='Community'>
                                 <div>Lexir for Brands</div>
                                 <div>Business Buyers</div>
@@ -51,7 +51,7 @@ const Footer = () => {
                                 <div>Blog</div>
                             </FooterSection>
                         </div>
-                        <div>
+                        <div className='cursor-pointer'>
                             <Image src={MediumLogo} alt='Logo' />
                             <Image src={FacebookLogo} alt='Logo' />
                             <Image src={InstagramLogo} alt='Logo' />
@@ -60,7 +60,7 @@ const Footer = () => {
                     </div>
                     <div className="w-full border-t pt-5 flex justify-between">
                         <span className="font-light text-base">© 2022 Lexir Inc.</span>
-                        <div className="w-56 mr-3 font-medium text-base flex justify-between items-center">
+                        <div className="w-56 mr-3 font-medium text-base flex justify-between items-center cursor-pointer">
                             <span>Privacy</span>
                             <span>Terms of Service</span>
                         </div>
