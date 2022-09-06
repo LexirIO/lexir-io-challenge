@@ -21,9 +21,9 @@ const Cart = () => {
             <div className="flex justify-between mt-12 mb-16">
                 <div className="w-[203px] h-[49px] flex justify-center items-center border border-[#F2F2F2] rounded">700ml</div>
                 <div className="w-[160px] h-[48px] flex justify-between items-center border border-[#F2F2F2] rounded p-4">
-                    <Image src={PlusIcon} alt="plus icon" />
+                    <Image src={PlusIcon} alt="plus icon" className="cursor-pointer"/>
                     <p className="w-[50px] flex justify-center border-x-2 border-[#F2F2F2]">2</p>
-                    <Image src={MinusIcon} alt="plus icon" />
+                    <Image src={MinusIcon} alt="plus icon" className="cursor-pointer"/>
                 </div>
             </div>
             <Button type="button" className="w-full h-[49px] px-4 bg-black text-white flex justify-between items-center rounded">

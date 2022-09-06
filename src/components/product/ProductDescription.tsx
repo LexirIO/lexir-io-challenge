@@ -4,6 +4,7 @@ import NoseIcon from "@assets/nose.svg";
 import TongueIcon from "@assets/tongue.svg";
 import WineIcon from "@assets/wine.svg";
 import DacingIcon from "@assets/dancing.svg";
+import DotIcon from "@assets/dot.svg";
 
 const ProductDescription = () => {
     return (
@@ -11,18 +12,30 @@ const ProductDescription = () => {
             <p>Tasting notes</p>
             <div className="flex justify-between mt-12">
                 <Image src={NoseIcon} alt="icon" />
-                <ul className="flex">
-                    <li>ASTRINGENT</li>
-                    <li>FRUITY</li>
-                    <li>COMPLEX</li>
+                <ul className="flex list-outside list-disc">
+                    <li className="text-[#8F8F8F]-500">
+                        <span>ASTRINGENT</span>
+                    </li>
+                    <li className="text-[#8F8F8F]-500">
+                        <span>FRUITY</span>
+                    </li>
+                    <li className="text-[#8F8F8F]-500">
+                        <span>COMPLEX</span>
+                    </li>
                 </ul>
             </div>
             <div className="flex justify-between mt-12">
                 <Image src={TongueIcon} alt="icon" />
-                <ul className="flex">
-                    <li>BITTER</li>
-                    <li>FLAMBOYANT</li>
-                    <li>BRIGHT</li>
+                <ul className="flex list-outside list-disc">
+                    <li className="text-[#8F8F8F]-500">
+                        <span>BITTER</span>
+                    </li>
+                    <li className="text-[#8F8F8F]-500">
+                        <span>FLAMBOYANT</span>
+                    </li>
+                    <li className="text-[#8F8F8F]-500">
+                        <span>BRIGHT</span>
+                    </li>
                 </ul>
             </div>
             <div className="mt-12">
