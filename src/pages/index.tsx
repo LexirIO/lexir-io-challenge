@@ -6,11 +6,13 @@ import Product from "@components/product";
 
 export default function Home() {
     return (
+        <>
+        <Navbar />
         <Main>
-            <Navbar />
             <Product />
             <Brand />
             <Footer />
         </Main>
+        </>
     );
 }

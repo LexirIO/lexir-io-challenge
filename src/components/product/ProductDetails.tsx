@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import Bottle from "../../assets/bottle.svg";
+import Bottle from "@assets/bottle.svg";
 
 const ProductDetails = () => {
     return (
         <section>
-            <Image src={Bottle} alt="brand-logo" />
-            <div>
-                <h3>Product Details</h3>
+            <div className="w-[90%] flex justify-center bg-[#F9F9F9] rounded-md border border-[#E7E7E7] p-8"><Image src={Bottle} alt="brand-logo" /></div>
+            <div className="w-[90%] mt-20">
+                <h3 className="">Product Details</h3>
                 <p>
                     Kiss My Rhubarb takes its origins from an old handwritten
                     recipe from co-creators Niels’ and Wouters’ rebellious

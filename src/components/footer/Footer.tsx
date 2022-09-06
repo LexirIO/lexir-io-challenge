@@ -1,10 +1,12 @@
 import React from "react";
-import WhiteLogo from "../../assets/logo-white.svg";
+import Image from "next/image";
+import WhiteLogo from "@assets/logo-white.svg";
 
 const Footer = () => {
     return (
-        <footer className="d-flex">
-            <img src={WhiteLogo} alt="brand-logo" />
+        <footer className="bg-[#2D2D2D] text-white justify-between p-8">
+            <div className="flex items-start">
+            <Image src={WhiteLogo} alt="brand-logo" />
             <div>
                 <h3>COMMUNITY</h3>
                 <p>Lexir for Brands</p>
@@ -31,9 +33,10 @@ const Footer = () => {
                 <p>Blog</p>
             </div>
             <div></div>
-            <div className="d-flex">
+            </div>
+            <div className="flex">
                 <p>© 2022 Lexir Inc.</p>
-                <div className="d-flex">
+                <div className="flex">
                     <p>Privacy</p>
                     <p>Terms of service</p>
                 </div>

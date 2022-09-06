@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Main: NextPage<Props> = ({ children }) => {
-    return <section>{children}</section>;
+    return <section className="p-8">{children}</section>;
 };
 
 export default Main;

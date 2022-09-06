@@ -1,30 +1,31 @@
 import React from "react";
-import NoseIcon from "../../assets/nose.svg";
-import TongueIcon from "../../assets/tongue.svg";
-import WineIcon from "../../assets/wine.svg";
-import DacingIcon from "../../assets/dancing.svg";
+import Image from "next/image";
+import NoseIcon from "@assets/nose.svg";
+import TongueIcon from "@assets/tongue.svg";
+import WineIcon from "@assets/wine.svg";
+import DacingIcon from "@assets/dancing.svg";
 
 const ProductDescription = () => {
     return (
-        <section>
-            <p>tasting notes</p>
-            <div>
-                <img src={NoseIcon} alt="icon" />
-                <ul>
+        <section className="mt-32">
+            <p>Tasting notes</p>
+            <div className="flex justify-between mt-12">
+                <Image src={NoseIcon} alt="icon" />
+                <ul className="flex">
                     <li>ASTRINGENT</li>
                     <li>FRUITY</li>
-                    <li>Complex</li>
+                    <li>COMPLEX</li>
                 </ul>
             </div>
-            <div>
-                <img src={TongueIcon} alt="icon" />
-                <ul>
+            <div className="flex justify-between mt-12">
+                <Image src={TongueIcon} alt="icon" />
+                <ul className="flex">
                     <li>BITTER</li>
                     <li>FLAMBOYANT</li>
                     <li>BRIGHT</li>
                 </ul>
             </div>
-            <div>
+            <div className="mt-12">
                 <h3>Flavour Intensity</h3>
                 <div>
                     <div />
@@ -34,16 +35,16 @@ const ProductDescription = () => {
                     <div />
                 </div>
             </div>
-            <div>
+            <div className="mt-12">
                 <h3>Suggested Use</h3>
-                <div>
-                    <div>
+                <div className="flex justify-between mt-10">
+                    <div className="flex">
                         <p>In a cocktail</p>
-                        <img src={WineIcon} alt="icon" />
+                        <Image src={WineIcon} alt="icon" />
                     </div>
-                    <div>
+                    <div className="flex">
                         <p>At a party</p>
-                        <img src={DacingIcon} alt="icon" />
+                        <Image src={DacingIcon} alt="icon" />
                     </div>
                 </div>
             </div>
