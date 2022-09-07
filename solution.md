@@ -8,3 +8,5 @@
 
 ## Suggestions
 - The mobile UI wasn't provided if it is required maybe is should be (as i only worked on the web).
+
+## [Link to the project](https://lexir-io-challenge-umber.vercel.app/)
