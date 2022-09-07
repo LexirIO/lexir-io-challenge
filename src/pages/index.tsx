@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import "../styles/Home.module.css";
 import Header from "@components/Headers";
 import Navbar from "@components/Navbar";
