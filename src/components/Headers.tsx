@@ -39,8 +39,8 @@ function classNames(...classes :any) {
 
 export default function Header() {
   return (
-    <Popover className="relative bg-white max-h-[104px] shadow">
-      <div className="mx-0 sm:px-6">
+    <Popover className="relative bg-white max-h-[104px] w-[1280px] shadow">
+      <div className="sm:px-6">
         <div className="flex items-center justify-center py-10 md:justify-start md:space-x-10">
           <div className="flex justify-start ml-[34px] lg:w-0 lg:flex-1">
             <a href="https://shop.lexir.com/">

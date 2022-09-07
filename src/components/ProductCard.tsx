@@ -11,7 +11,7 @@ export default function ProductImage() {
             alt = ''
             objectFit="cover"
             width={748}
-            height={644}
+            height={488}
           />
         </div>
       </div>
