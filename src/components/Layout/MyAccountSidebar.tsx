@@ -23,8 +23,7 @@ const MyAccountSidebar = () => {
   return (
     <>
       {/* Sidebar for mobile devices created with headless ui package*/}
-      
-      <section className="md:hidden mobile-sidebar m-2">
+      <aside className="md:hidden mobile-sidebar m-2">
         <Listbox value={selected} onChange={setSelected}>
           <div className="relative flex justify-start mt-1 ">
             <div>
@@ -78,7 +77,7 @@ const MyAccountSidebar = () => {
             </Transition>
           </div>
         </Listbox>
-      </section>
+      </aside>
 
       {/* Sidebar for Desktop devices created with headless ui package*/}
       <aside className="hidden md:flex p-5 w-1/4 min-h-screen">
