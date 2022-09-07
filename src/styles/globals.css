@@ -1,26 +1,45 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   html {
-    color-scheme: dark;
+    font-family: 'Lato', sans-serif;
   }
-  body {
-    color: white;
-    background: black;
-  }
+}
+.input {
+  @apply border-0 mb-3 px-3 py-3 bg-white rounded text-sm focus:outline-none focus:border focus:border-green-200 ease-linear transition-all duration-150;
+}
+
+.shadow {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+}
+
+.animate-y{
+  @apply rotate-45 translate-y-3 opacity-50 group-hover:opacity-100
+}
+
+.animate-x {
+  @apply opacity-50 group-hover:opacity-100
+}
+
+.h2-text {
+  @apply font-bold text-2xl
+}
+
+.showMenuNav {
+  @apply block absolute w-full h-screen top-0 left-0 bg-white z-10 flex flex-col justify-evenly items-center
+}
+
+
+.phone-input-width{
+  width: 100% !important;
+}
+
+@media (min-width: 768px) {
+    .phone-input-width {
+        width: 40% !important;
+    }
 }
