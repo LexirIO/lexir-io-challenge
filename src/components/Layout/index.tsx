@@ -1,6 +1,5 @@
 import Footer from "./Footer"
 import Header from "./Header"
-import Sidebar from "./MyAccountSidebar"
 
 type LayoutProps = {
     children: JSX.Element | JSX.Element[]
