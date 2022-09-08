@@ -9,7 +9,6 @@ export default function ProductImage() {
           <Image
             src={Rhubharb}
             alt = ''
-            objectFit="cover"
             width={748}
             height={488}
           />
