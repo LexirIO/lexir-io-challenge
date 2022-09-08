@@ -12,13 +12,17 @@ import Link from "next/link";
 const footer = () => {
   return (
     <footer className="text-center lg:text-left bg-metal-dark text-gray-600">
-
       {/* Destination links */}
       <section className="mx-6 py-10 text-center md:text-left">
         <div className="grid   grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {/* Logo */}
           <div>
-            <Image src={logo.src} alt="logo" />
+            <Image
+              src={logo.src}
+              alt="logo"
+              width={106}
+              height={24}
+            />
           </div>
 
           <div>
@@ -126,7 +130,6 @@ const footer = () => {
               </li>
             </ul>
           </div>
-
         </div>
       </section>
 
@@ -141,7 +144,6 @@ const footer = () => {
           <span className="text-white">Terms of service</span>
         </div>
       </section>
-
     </footer>
   );
 };

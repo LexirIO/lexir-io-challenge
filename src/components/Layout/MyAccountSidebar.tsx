@@ -7,15 +7,15 @@ import settings from '../../assets/settings.svg';
 import logout from '../../assets/logout.svg';
 import address from '../../assets/address.svg';
 import helpCenter from '../../assets/help-center.svg';
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const people = [
   { id: 1, name: "Account", href: "#" },
   { id: 2, name: "Orders", href: "#" },
   { id: 3, name: "Address", href: "#" },
-  { id: 4, name: "Help Center", href: "#"  },
+  { id: 4, name: "Help Center" , href: "#" },
   { id: 5, name: "Logout", href: "#" },
 ];
 
@@ -46,25 +46,27 @@ const MyAccountSidebar = () => {
               leaveTo="opacity-0"
             >
               <Listbox.Options className="absolute mt-1 max-h-60 w-1/3 overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
-                {people.map((person) => (
+                {people.map((link) => (
                   <Listbox.Option
-                    key={person.id}
+                    key={link.id}
                     className={({ active }) =>
                       `relative cursor-default select-none py-2 pl-10 pr-4 ${
                         active ? "bg-amber-100 text-amber-900" : "text-gray-900"
                       }`
                     }
-                    value={person}
+                    value={link}
                   >
                     {({ selected }) => (
                       <>
                         <Link
-                          href={person.href}
+                          href={link.href}
                           className={`block truncate ${
                             selected ? "font-medium" : "font-normal"
                           }`}
                         >
-                          {person.name}
+                          <a>
+                            {link.name}
+                          </a>
                         </Link>
                         {selected ? (
                           <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600">
@@ -85,54 +87,74 @@ const MyAccountSidebar = () => {
       <aside className="hidden md:flex p-5 w-1/4 min-h-screen">
         <ul className="w-full">
           <li className="p-2 border hover:bg-gray-100 bg-gray-100">
-            <a href="/my-account" className="flex gap-2 ">
-              <div className="flex justify-start">
-                <div className="flex">
-                  <Image src={settings.src} alt="account" className="mr-3" />
-                  Account
-                </div>
-              </div>
-            </a>
+            <Link href="/my-account">
+              <a className="flex gap-2 justify-start">
+                <Image
+                  src={settings.src}
+                  alt="account"
+                  width={25}
+                  height={24}
+                  className="mr-3"
+                />
+                Account
+              </a>
+            </Link>
           </li>
           <li className="p-2 hover:bg-gray-100">
-            <a href="#" className="flex gap-2">
-              <div className="flex justify-start">
-                <div className="flex">
-                  <Image src={orders.src} alt="setting" className="mr-3" />
-                  Orders
-                </div>
-              </div>
-            </a>
+            <Link href="#">
+              <a className="flex gap-2 justify-start">
+                <Image
+                  src={orders.src}
+                  alt="order"
+                  width={21}
+                  height={18}
+                  className="mr-3"
+                />
+                Orders
+              </a>
+            </Link>
           </li>
           <li className="p-2 hover:bg-gray-100">
-            <a href="#" className="flex gap-2">
-              <div className="flex justify-start">
-                <div className="flex">
-                  <Image src={address.src} className="mr-2" />
-                  Address
-                </div>
-              </div>
-            </a>
+            <Link href="#">
+              <a className="flex gap-2 justify-start">
+                <Image
+                  src={address.src}
+                  alt="address"
+                  width={25}
+                  height={24}
+                  className="mr-2"
+                />
+                Address
+              </a>
+            </Link>
           </li>
           <li className="p-2 hover:bg-gray-100">
-            <a href="#" className="flex gap-2">
-              <div className="flex justify-start">
-                <div className="flex">
-                  <Image src={helpCenter.src} alt="help-center" className="mr-2" />
-                  Help Center
-                </div>
-              </div>
-            </a>
+            <Link href="#">
+              <a className="flex gap-2 justify-start">
+                <Image
+                  src={helpCenter.src}
+                  alt="help-center"
+                  width={25}
+                  height={24}
+                  className="mr-2"
+                />
+                Help Center
+              </a>
+            </Link>
           </li>
           <li className="p-2 hover:bg-gray-100 active:bg-gray-100">
-            <a href="#" className="flex gap-2">
-              <div className="flex text-center">
-                <div className="flex">
-                  <Image src={logout.src} alt="logout" className="mr-3" />
-                  Logout
-                </div>
-              </div>
-            </a>
+            <Link href="#">
+              <a className="flex gap-2 justify-start">
+                <Image
+                  src={logout.src}
+                  alt="logout"
+                  width={20}
+                  height={26}
+                  className="mr-2"
+                />
+                Logout
+              </a>
+            </Link>
           </li>
         </ul>
       </aside>

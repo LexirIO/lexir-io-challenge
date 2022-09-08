@@ -6,14 +6,17 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Header = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false); { /* Initiated isNavOpen state with false */}
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  {
+    /* Initiated isNavOpen state with false */
+  }
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
 
   return (
     <>
       <section className="shadow flex items-center justify-between border-b border-gray-100 box-shadow p-8">
         <Link href="/">
-          <Image src={logo.src} alt="logo" />
+          <Image src={logo.src} alt="logo" width={106} height={24} />
         </Link>
         <nav>
           {/* Mobile Users navigation bar */}
@@ -62,18 +65,26 @@ const Header = () => {
               </div>
               <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <Link href="#">Product</Link>
-                </li>
-                <li className="border-b border-gray-400 my-8 uppercase">
-                  <Link href="#" className="no-underline">
-                    Brands
+                  <Link href="#">
+                    <a>
+                      Product
+                    </a>
                   </Link>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <Link href="#">Sign In</Link>
+                  <Link href="#">
+                    <a>Brands</a>
+                  </Link>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <Link href="#">Cart</Link>
+                  <Link href="#">
+                    <a>Sign In</a>
+                  </Link>
+                </li>
+                <li className="border-b border-gray-400 my-8 uppercase">
+                  <Link href="#">
+                    <a>Cart</a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -83,25 +94,39 @@ const Header = () => {
           <section className="DESKTOP-MENU">
             <ul className=" hidden space-x-8 lg:flex uppercase">
               <li className="mx-5">
-                <Link href="#">Product</Link>
-              </li>
-              <li className="mx-5">
-                <Link href="#">Brands</Link>
-              </li>
-              <li className="mx-5">
-                <Link href="#" className="flex gap-2">
-                  <span>
-                    <Image src={person.src} alt="" />
-                  </span>
-                  Sign In
+                <Link href="#">
+                  <a>Product</a>
                 </Link>
               </li>
               <li className="mx-5">
-                <Link href="#" className="flex gap-2">
-                  <span>
-                    <Image src={shopcart.src} alt="" />
-                  </span>
-                  Cart
+                <Link href="#">
+                  <a>Brands</a>
+                </Link>
+              </li>
+              <li className="mx-5">
+                <Link href="#">
+                  <a className="flex gap-2">
+                    <Image
+                      src={person.src}
+                      alt="signin"
+                      width={24}
+                      height={24}
+                    />
+                    Sign In
+                  </a>
+                </Link>
+              </li>
+              <li className="mx-5">
+                <Link href="#">
+                  <a className="flex gap-2">
+                    <Image
+                      src={shopcart.src}
+                      alt="cart"
+                      width={25}
+                      height={24}
+                    />
+                    Cart
+                  </a>
                 </Link>
               </li>
             </ul>
