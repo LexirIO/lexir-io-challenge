@@ -94,7 +94,7 @@ const MyAccountSidebar = () => {
                   alt="account"
                   width={25}
                   height={24}
-                  className="mr-3"
+                  className=""
                 />
                 Account
               </a>
@@ -106,9 +106,8 @@ const MyAccountSidebar = () => {
                 <Image
                   src={orders.src}
                   alt="order"
-                  width={21}
-                  height={18}
-                  className="mr-3"
+                  width={25}
+                  height={24}
                 />
                 Orders
               </a>
@@ -122,7 +121,6 @@ const MyAccountSidebar = () => {
                   alt="address"
                   width={25}
                   height={24}
-                  className="mr-2"
                 />
                 Address
               </a>
@@ -136,7 +134,6 @@ const MyAccountSidebar = () => {
                   alt="help-center"
                   width={25}
                   height={24}
-                  className="mr-2"
                 />
                 Help Center
               </a>
@@ -148,9 +145,8 @@ const MyAccountSidebar = () => {
                 <Image
                   src={logout.src}
                   alt="logout"
-                  width={20}
-                  height={26}
-                  className="mr-2"
+                  width={25}
+                  height={24}
                 />
                 Logout
               </a>
