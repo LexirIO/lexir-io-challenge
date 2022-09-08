@@ -2,6 +2,8 @@ import logo from "../../assets/logo.png";
 import person from "../../assets/person.svg";
 import shopcart from "../../assets/cart-icon.svg";
 import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false); { /* Initiated isNavOpen state with false */}
@@ -10,9 +12,9 @@ const Header = () => {
   return (
     <>
       <section className="shadow flex items-center justify-between border-b border-gray-100 box-shadow p-8">
-        <a href="/">
-          <img src={logo.src} alt="logo" />
-        </a>
+        <Link href="/">
+          <Image src={logo.src} alt="logo" />
+        </Link>
         <nav>
           {/* Mobile Users navigation bar */}
           <section className="MOBILE-MENU flex lg:hidden">
@@ -60,18 +62,18 @@ const Header = () => {
               </div>
               <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="#">Product</a>
+                  <Link href="#">Product</Link>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="#" className="no-underline">
+                  <Link href="#" className="no-underline">
                     Brands
-                  </a>
+                  </Link>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="#">Sign In</a>
+                  <Link href="#">Sign In</Link>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="#">Cart</a>
+                  <Link href="#">Cart</Link>
                 </li>
               </ul>
             </div>
@@ -81,26 +83,26 @@ const Header = () => {
           <section className="DESKTOP-MENU">
             <ul className=" hidden space-x-8 lg:flex uppercase">
               <li className="mx-5">
-                <a href="#">Product</a>
+                <Link href="#">Product</Link>
               </li>
               <li className="mx-5">
-                <a href="#">Brands</a>
+                <Link href="#">Brands</Link>
               </li>
               <li className="mx-5">
-                <a href="#" className="flex gap-2">
+                <Link href="#" className="flex gap-2">
                   <span>
-                    <img src={person.src} alt="" />
+                    <Image src={person.src} alt="" />
                   </span>
                   Sign In
-                </a>
+                </Link>
               </li>
               <li className="mx-5">
-                <a href="#" className="flex gap-2">
+                <Link href="#" className="flex gap-2">
                   <span>
-                    <img src={shopcart.src} alt="" />
+                    <Image src={shopcart.src} alt="" />
                   </span>
                   Cart
-                </a>
+                </Link>
               </li>
             </ul>
           </section>

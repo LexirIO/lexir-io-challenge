@@ -6,6 +6,7 @@ import fileUpload from "../assets/file-upload.svg";
 import MyAccountSidebar from "@components/Layout/MyAccountSidebar";
 
 import "react-phone-input-2/lib/style.css";
+import Image from "next/image";
 
 
 
@@ -54,7 +55,7 @@ const Home = () => {
             </header>
             <button className="flex">
               <span className="mr-3">
-                <img src={editIcon.src} alt="edit" />
+                <Image src={editIcon.src} alt="edit" />
               </span>
               Edit
             </button>
@@ -204,7 +205,7 @@ const Home = () => {
                 <div className="flex flex-col md:p-9">
                   <div className="flex justify-center my-3">
                     <label htmlFor="icon-file-upload" className="text-center">
-                      <img src={fileUpload.src} alt="file-upload" />
+                      <Image src={fileUpload.src} alt="file-upload" />
                     </label>
                   </div>
 

@@ -7,6 +7,8 @@ import settings from '../../assets/settings.svg';
 import logout from '../../assets/logout.svg';
 import address from '../../assets/address.svg';
 import helpCenter from '../../assets/help-center.svg';
+import Link from "next/link";
+import Image from "next/image";
 
 
 const people = [
@@ -56,14 +58,14 @@ const MyAccountSidebar = () => {
                   >
                     {({ selected }) => (
                       <>
-                        <a
+                        <Link
                           href={person.href}
                           className={`block truncate ${
                             selected ? "font-medium" : "font-normal"
                           }`}
                         >
                           {person.name}
-                        </a>
+                        </Link>
                         {selected ? (
                           <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600">
                             <CheckIcon className="h-5 w-5" aria-hidden="true" />
@@ -86,7 +88,7 @@ const MyAccountSidebar = () => {
             <a href="/my-account" className="flex gap-2 ">
               <div className="flex justify-start">
                 <div className="flex">
-                  <img src={settings.src} alt="account" className="mr-3" />
+                  <Image src={settings.src} alt="account" className="mr-3" />
                   Account
                 </div>
               </div>
@@ -96,7 +98,7 @@ const MyAccountSidebar = () => {
             <a href="#" className="flex gap-2">
               <div className="flex justify-start">
                 <div className="flex">
-                  <img src={orders.src} alt="setting" className="mr-3" />
+                  <Image src={orders.src} alt="setting" className="mr-3" />
                   Orders
                 </div>
               </div>
@@ -106,7 +108,7 @@ const MyAccountSidebar = () => {
             <a href="#" className="flex gap-2">
               <div className="flex justify-start">
                 <div className="flex">
-                  <img src={address.src} className="mr-2" />
+                  <Image src={address.src} className="mr-2" />
                   Address
                 </div>
               </div>
@@ -116,7 +118,7 @@ const MyAccountSidebar = () => {
             <a href="#" className="flex gap-2">
               <div className="flex justify-start">
                 <div className="flex">
-                  <img src={helpCenter.src} alt="help-center" className="mr-2" />
+                  <Image src={helpCenter.src} alt="help-center" className="mr-2" />
                   Help Center
                 </div>
               </div>
@@ -126,7 +128,7 @@ const MyAccountSidebar = () => {
             <a href="#" className="flex gap-2">
               <div className="flex text-center">
                 <div className="flex">
-                  <img src={logout.src} alt="logout" className="mr-3" />
+                  <Image src={logout.src} alt="logout" className="mr-3" />
                   Logout
                 </div>
               </div>

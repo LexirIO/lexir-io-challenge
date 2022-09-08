@@ -6,6 +6,8 @@ import {
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../../assets/logo.svg";
+import Image from "next/image";
+import Link from "next/link";
 
 const footer = () => {
   return (
@@ -16,7 +18,7 @@ const footer = () => {
         <div className="grid   grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {/* Logo */}
           <div>
-            <img src={logo.src} alt="logo" />
+            <Image src={logo.src} alt="logo" />
           </div>
 
           <div>
@@ -24,15 +26,15 @@ const footer = () => {
               Community
             </h6>
             <p className="mb-4 text-white">
-              <a href="#!" className="">
+              <Link href="#!" className="">
                 Lexir for Brands
-              </a>
+              </Link>
             </p>
             <p className="mb-4 text-white">
-              <a href="#!">Business Buyers</a>
+              <Link href="#!">Business Buyers</Link>
             </p>
             <p className="mb-4 text-white">
-              <a href="#!">Sales Affiliates</a>
+              <Link href="#!">Sales Affiliates</Link>
             </p>
           </div>
 
@@ -41,13 +43,13 @@ const footer = () => {
               Platform
             </h6>
             <p className="mb-4 text-white">
-              <a href="#!">Resources</a>
+              <Link href="#!">Resources</Link>
             </p>
             <p className="mb-4 text-white">
-              <a href="#!">Pricing</a>
+              <Link href="#!">Pricing</Link>
             </p>
             <p className="mb-4 text-white">
-              <a href="#!">Get Started</a>
+              <Link href="#!">Get Started</Link>
             </p>
           </div>
 
@@ -56,13 +58,13 @@ const footer = () => {
               Company
             </h6>
             <p className="mb-4 text-white">
-              <a href="#!">About</a>
+              <Link href="#!">About</Link>
             </p>
             <p className="mb-4 text-white">
-              <a href="#!">Contact</a>
+              <Link href="#!">Contact</Link>
             </p>
             <p className="mb-4 text-white">
-              <a href="#!">Legal</a>
+              <Link href="#!">Legal</Link>
             </p>
           </div>
 
@@ -71,56 +73,56 @@ const footer = () => {
               Lexir Shop
             </h6>
             <p className="mb-4 text-white">
-              <a href="#!">Brands</a>
+              <Link href="#!">Brands</Link>
             </p>
             <p className="mb-4 text-white">
-              <a href="#!">Spirits</a>
+              <Link href="#!">Spirits</Link>
             </p>
             <p className="mb-4 text-white">
-              <a href="#!">Wine</a>
+              <Link href="#!">Wine</Link>
             </p>
             <p className="mb-4 text-white">
-              <a href="#!">Blog</a>
+              <Link href="#!">Blog</Link>
             </p>
           </div>
 
           <div>
             <ul className="flex justify-center md:justify-end">
               <li className="mr-5">
-                <a
+                <Link
                   target="_blank"
                   rel="noreferrer"
                   href="https://medium.com/lexir"
                 >
                   <FontAwesomeIcon icon={faMedium} color="#fff" />
-                </a>
+                </Link>
               </li>
               <li className="mr-5">
-                <a
+                <Link
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.linkedin.com/company/lexir"
                 >
                   <FontAwesomeIcon icon={faFacebook} color="#fff" />
-                </a>
+                </Link>
               </li>
               <li className="mr-5">
-                <a
+                <Link
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.facebook.com/LexirOfficial"
                 >
                   <FontAwesomeIcon icon={faInstagram} color="#fff" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.instagram.com/lexirofficial"
                 >
                   <FontAwesomeIcon icon={faLinkedin} color="#fff" />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
