@@ -20,13 +20,13 @@ export default function Home() {
         <br></br>
                 
         <div className="inline-flex pt-[42.5px] ml-[34px]">
-          <div className="ml-[34px]">
+          <div className="">
             <ProductImage/>
           </div>
 
           <div className="inline-flex flex-col ml-[25px]">
-            <div className="w-[377px] h-[56px] text-[48px] font-[700] leading-[56px] pb-[0px] pt-[52.5]  truncate">
-              <h1>Kiss My Rhubarb</h1>
+            <div className="w-[390px] h-[56px] text-[48px] font-[700] leading-[56px] pb-[0px] pt-[52.5]  truncate">
+              <p>Kiss My Rhubarb</p>
             </div>
 
             <p className="text-[20px] leading-[24px] font-[700] text-[#cccccc] w-[86] h-[24]">APERITIF</p>
@@ -74,11 +74,11 @@ export default function Home() {
         <div className="inline-flex mt-[80] ml-[34px] pt-[80px]">
             {/* Start of product details div */}
           <div className="inline-flex flex-col">
-            <div className="flex items-start ml-[34px] pt-[80px] pb-[34px] w-[178px] h-[30px] text-[24px] font-[700] leading-[30px] truncate">
+            <div className="flex items-start pt-[80px] pb-[34px] w-[178px] h-[30px] text-[24px] font-[700] leading-[30px] truncate">
               Product Details
             </div>
 
-            <div className="w-[697px] h-[250px] text-[16px] font-[400] leading-[25px] mt-[34px] ml-[34px]">
+            <div className="w-[697px] h-[250px] text-[16px] font-[400] leading-[25px] mt-[34px] ">
               Kiss My Rhubarb takes its origins from an old handwritten recipe from co-creators Niels’ and Wouters’ rebellious grandparents. Using carefully hand-selected stalks of rhubarb, and locally-sourced flowers and herbs, this summery aperitif perfectly expresses the brimming liveliness that characterizes the Belgian countryside in bloom. Kiss My Rhubarb is created in collaboration with local producers in Izegem that select only the freshest stalks of rhubarb using attentive and sustainable practices. By avoiding the pitfalls of overproduction and diminished flavour that large-scale harvesting methods can bring, Kiss My’s careful foraging process results in an aperitif that emphasises the tangy juiciness of its primary ingredient.
             </div>
           </div>
