@@ -2,7 +2,6 @@
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import {
-  Bars3Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
 
@@ -40,8 +39,8 @@ function classNames(...classes :any) {
 export default function Header() {
   return (
     <Popover className="relative bg-white max-h-[104px] w-[1280px] shadow">
-      <div className="sm:px-6">
-        <div className="flex items-center justify-center py-10 md:justify-start md:space-x-10">
+      <div className="">
+        <div className="flex items-center justify-center py-10">
           <div className="flex justify-start ml-[34px] lg:w-0 lg:flex-1">
             <a href="https://shop.lexir.com/">
               <span className="sr-only"></span>
@@ -56,15 +55,10 @@ export default function Header() {
                 </svg>
             </a>
           </div>
-          <div className="md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center">
-              <span className="sr-only">Open menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-            </Popover.Button>
-          </div>
-        <div className='inline-flex justify-center items-center'>
-          <Popover.Group as="nav" className="hidden items-end justify-end md:flex">
-            <Popover className="relative">
+
+        <div className='flex items-center justify-center'>
+          <Popover.Group as="nav" className="">
+            <Popover className="relative flex justify-center items-center">
               {({ open }) => (
                 <>
                   <Popover.Button
@@ -99,7 +93,7 @@ export default function Header() {
             
             <a
               href="#"
-              className="pr-[34px] text-[14px] text-[#2D2D2D] leading-5 font-[500] items-center justify-center gap-[10px] inline-flex"
+              className="pr-[34px] text-[14px] text-[#2D2D2D] leading-5 font-[500] items-center justify-center gap-x-[10px] inline-flex"
             >
               <span>
               <svg className = 'self-center' width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,8 +169,6 @@ export default function Header() {
               )}
             </Popover>
           </Popover.Group>
-        
-          
           </div>
         </div>
         
@@ -191,63 +183,6 @@ export default function Header() {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <Popover.Panel focus className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
-          <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg">
-            <div className="px-5 pt-5 pb-6">
-              <div className="flex items-center justify-between">
-                <div>
-                 
-                </div>
-                <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500">
-                    <span className="sr-only">Close menu</span>
-                    <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-                  </Popover.Button>
-                </div>
-              </div>
-              <div className="mt-6">
-                <nav className="grid gap-y-8">
-                  {products.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-m-3 flex items-center rounded-md p-3"
-                    >
-                      <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
-                    </a>
-                  ))}
-                </nav>
-              </div>
-            </div>
-            <div className="space-y-6 py-6 px-5">
-              <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                {brands.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-base font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-              <div>
-                <a
-                  href="#"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent px-4 py-2 text-base font-medium text-white shadow-sm"
-                >
-                  Sign up
-                </a>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?{' '}
-                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                    Sign in
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </Popover.Panel>
       </Transition>
     </Popover>
   )

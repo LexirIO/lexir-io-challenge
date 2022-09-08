@@ -6,10 +6,10 @@ function classNames(...classes: any) {
 
 export default function Navbar() {
   return (
-    <Popover className="inline-flex bg-white w-[1280px]">
-      <div className="inline-flex items-start justify-start sm:px-6">
-        <div className="inline-flex items-center justify-start md:justify-start md:space-x-10">
-          <Popover.Group as="nav" className="inline-flex items-start justify-start md:flex">
+    <Popover className="inline-flex bg-white w-full">
+      <div className="inline-flex items-start justify-start">
+        <div className="inline-flex items-center justify-start">
+          <Popover.Group as="nav" className="inline-flex items-start justify-start">
             <Popover className="inline-flex items-center justify-start">
               {({ open }) => (
                 <>
@@ -49,8 +49,7 @@ export default function Navbar() {
                   </span>
                   <Popover.Button
                     className={classNames(
-                      open ? 'text-gray-900' : 'text-gray-500',
-                      ''
+                      open
                     )}
                   >
                     <span className='pr-[22px] text-[18px] font-[400] leading-[19.2px] text-[#2D2D2D]'>Kiss My</span>
@@ -63,23 +62,15 @@ export default function Navbar() {
                   </span>
                   <Popover.Button
                     className={classNames(
-                      open ? 'text-gray-900' : 'text-gray-500',
-                      ''
+                      open 
                     )}
                   >
                     <span className='text-[18px] font-[700] leading-[19.2px] text-[#2D2D2D]'>Kiss My Rhubharb</span>
                   </Popover.Button>
-                  </div>
-                  
-                  
-                    
+                  </div> 
                 </>
               )}
             </Popover>
-
-            
-
-            
           </Popover.Group>
         </div>
         </div>

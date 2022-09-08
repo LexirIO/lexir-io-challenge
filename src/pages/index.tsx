@@ -6,9 +6,11 @@ import Counter from "@components/Counter";
 import ProductImage from "@components/ProductCard";
 import BottlesImage from "@components/GitBucketPhoto";
 
+
 export default function Home() {
   return (
     <>
+      <div className="pageWrap">
         <Header/>
                 
         <br></br>
@@ -294,6 +296,7 @@ export default function Home() {
               </svg>
             </div>
           </div>
+        </div>
       </>
   );
 }
